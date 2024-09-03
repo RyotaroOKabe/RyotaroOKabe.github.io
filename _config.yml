@@ -22,13 +22,13 @@ repository               : "RyotaroOKabe/RyotaroOKabe.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
+  name             : "Ryotaro Okabe"
+  pronouns         : "he/him"  
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
+  location         : "Cambridge, MA"
   employer         : "Red Brick University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "rokabe@mit.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
