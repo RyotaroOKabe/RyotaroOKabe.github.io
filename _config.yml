@@ -49,13 +49,13 @@ author:
 
   # Social media
   bluesky          : # "bsky.app" # Replace this with you Bluesky username
-  facebook         : "https://www.facebook.com/ryotaro.okabe.98"
+  facebook         : "ryotaro.okabe.98"
   flickr           : # Username
   foursquare       : # Username
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : "https://www.instagram.com/okaberyotaro/"
+  instagram        : "okaberyotaro"
   lastfm           : # Username
   linkedin         : "https://www.linkedin.com/in/ryotaro-okabe-56463b1bb/"
   mastodon         : # URL
@@ -65,12 +65,12 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : "https://twitter.com/RyotaroOkabe"
+  twitter          : "RyotaroOkabe"
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
   xing             : # Username
-  youtube          : "https://www.youtube.com/@okabesamasama"
+  youtube          : "@okabesamasama"
   zhihu            : # URL
 
 # Publication Category - The following the list of publication categories and their headings
