@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. candidate in Chemistry at the Massachusetts Institute of Technology (MIT), advised by [Prof. Mingda Li](https://web.mit.edu/mingda/www/). My research focuses on the **structure–property relationships** and **inverse design of quantum materials**, integrating **computational physics**, **machine learning**, and **materials informatics**. I aim to uncover novel quantum phenomena and accelerate materials discovery through physics-inspired AI approaches.
+I am a Ph.D. candidate in Chemistry at the Massachusetts Institute of Technology (MIT), advised by [Prof. Mingda Li](https://qm.mit.edu/). My research focuses on the **structure–property relationships** and **inverse design of quantum materials**, integrating **computational physics**, **machine learning**, and **materials informatics**. I aim to uncover novel quantum phenomena and accelerate materials discovery through physics-inspired AI approaches.
 
 My recent work includes:
 - Developing generative models for **quantum materials**, 
@@ -24,4 +24,4 @@ More details can be found on the following pages:
 - [Presentations](/talks/)
 - [CV](/cv/)
 
-You can contact me at **rokabe@mit.edu** or connect via [Google Scholar](https://scholar.google.com), [GitHub](https://github.com/RyotaroOKabe), or [LinkedIn](https://linkedin.com/in/ryotaro-okabe).
+You can contact me at **rokabe [at] mit.edu** or connect via [Google Scholar](https://scholar.google.com/citations?user=M0gMbZMAAAAJ&hl=ja&oi=ao), [GitHub](https://github.com/RyotaroOKabe), or [LinkedIn](www.linkedin.com/in/ryotaro-okabe-56463b1bb).

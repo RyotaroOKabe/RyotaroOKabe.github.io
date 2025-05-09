@@ -177,7 +177,7 @@ ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
 ld: warning: search path '/usr/local/Cellar/openssl@3/3.4.1/lib' not found
 Undefined symbols for architecture x86_64:
   "_rb_thread_blocking_region", referenced from:
-      _t in conftest-757733.o
+      _t in conftest-198b90.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
@@ -348,7 +348,7 @@ ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
 ld: warning: search path '/usr/local/Cellar/openssl@3/3.4.1/lib' not found
 Undefined symbols for architecture x86_64:
   "_rb_enable_interrupt", referenced from:
-      _t in conftest-7502da.o
+      _t in conftest-f1c905.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
@@ -535,7 +535,7 @@ ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
 ld: warning: search path '/usr/local/Cellar/openssl@3/3.4.1/lib' not found
 Undefined symbols for architecture x86_64:
   "_pipe2", referenced from:
-      _t in conftest-de89b8.o
+      _t in conftest-bfe4c9.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
@@ -593,7 +593,7 @@ ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
 ld: warning: search path '/usr/local/Cellar/openssl@3/3.4.1/lib' not found
 Undefined symbols for architecture x86_64:
   "_accept4", referenced from:
-      _t in conftest-85a0d5.o
+      _t in conftest-bd7d2a.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
@@ -724,12 +724,17 @@ DYLD_LIBRARY_PATH=.:/usr/local/Cellar/ruby/3.4.3/lib ASAN_OPTIONS=detect_leaks=0
 clang++: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
 In file included from conftest.c:1:
 In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby.h:38:
-In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/ruby.h:25:
-In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/defines.h:79:
-/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/missing.h:19:11: fatal error: 'cmath' file not found
-   19 | # include <cmath>
-      |           ^~~~~~~
-1 error generated.
+In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/ruby.h:27:
+In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/internal/anyargs.h:83:
+/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/backward/cxxanyargs.hpp:540:6: warning: 'RUBY_API_VERSION_MAJOR' is not defined, evaluates to 0 [-Wundef]
+  540 | #if (RUBY_API_VERSION_MAJOR * 100 + RUBY_API_VERSION_MINOR) >= 301
+      |      ^
+/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/backward/cxxanyargs.hpp:540:37: warning: 'RUBY_API_VERSION_MINOR' is not defined, evaluates to 0 [-Wundef]
+  540 | #if (RUBY_API_VERSION_MAJOR * 100 + RUBY_API_VERSION_MINOR) >= 301
+      |                                     ^
+2 warnings generated.
+ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
+ld: warning: search path '/usr/local/Cellar/openssl@3/3.4.1/lib' not found
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -741,12 +746,25 @@ DYLD_LIBRARY_PATH=.:/usr/local/Cellar/ruby/3.4.3/lib ASAN_OPTIONS=detect_leaks=0
 clang++: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
 In file included from conftest.c:1:
 In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby.h:38:
-In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/ruby.h:25:
-In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/defines.h:79:
-/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/missing.h:19:11: fatal error: 'cmath' file not found
-   19 | # include <cmath>
-      |           ^~~~~~~
-1 error generated.
+In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/ruby.h:27:
+In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/internal/anyargs.h:83:
+/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/backward/cxxanyargs.hpp:540:6: warning: 'RUBY_API_VERSION_MAJOR' is not defined, evaluates to 0 [-Wundef]
+  540 | #if (RUBY_API_VERSION_MAJOR * 100 + RUBY_API_VERSION_MINOR) >= 301
+      |      ^
+/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/backward/cxxanyargs.hpp:540:37: warning: 'RUBY_API_VERSION_MINOR' is not defined, evaluates to 0 [-Wundef]
+  540 | #if (RUBY_API_VERSION_MAJOR * 100 + RUBY_API_VERSION_MINOR) >= 301
+      |                                     ^
+In file included from conftest.c:1:
+In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby.h:38:
+In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/ruby.h:29:
+In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/internal/core.h:23:
+In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/internal/core/rarray.h:32:
+/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/internal/gc.h:827:46: warning: unused parameter 'obj' [-Wunused-parameter]
+  827 | static inline void rb_gc_force_recycle(VALUE obj){}
+      |                                              ^
+3 warnings generated.
+ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
+ld: warning: search path '/usr/local/Cellar/openssl@3/3.4.1/lib' not found
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -758,12 +776,17 @@ DYLD_LIBRARY_PATH=.:/usr/local/Cellar/ruby/3.4.3/lib ASAN_OPTIONS=detect_leaks=0
 clang++: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
 In file included from conftest.c:1:
 In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby.h:38:
-In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/ruby.h:25:
-In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/defines.h:79:
-/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/missing.h:19:11: fatal error: 'cmath' file not found
-   19 | # include <cmath>
-      |           ^~~~~~~
-1 error generated.
+In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/ruby.h:27:
+In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/internal/anyargs.h:83:
+/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/backward/cxxanyargs.hpp:540:6: warning: 'RUBY_API_VERSION_MAJOR' is not defined, evaluates to 0 [-Wundef]
+  540 | #if (RUBY_API_VERSION_MAJOR * 100 + RUBY_API_VERSION_MINOR) >= 301
+      |      ^
+/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/backward/cxxanyargs.hpp:540:37: warning: 'RUBY_API_VERSION_MINOR' is not defined, evaluates to 0 [-Wundef]
+  540 | #if (RUBY_API_VERSION_MAJOR * 100 + RUBY_API_VERSION_MINOR) >= 301
+      |                                     ^
+2 warnings generated.
+ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
+ld: warning: search path '/usr/local/Cellar/openssl@3/3.4.1/lib' not found
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -775,12 +798,17 @@ DYLD_LIBRARY_PATH=.:/usr/local/Cellar/ruby/3.4.3/lib ASAN_OPTIONS=detect_leaks=0
 clang++: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
 In file included from conftest.c:1:
 In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby.h:38:
-In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/ruby.h:25:
-In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/defines.h:79:
-/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/missing.h:19:11: fatal error: 'cmath' file not found
-   19 | # include <cmath>
-      |           ^~~~~~~
-1 error generated.
+In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/ruby.h:27:
+In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/internal/anyargs.h:83:
+/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/backward/cxxanyargs.hpp:540:6: warning: 'RUBY_API_VERSION_MAJOR' is not defined, evaluates to 0 [-Wundef]
+  540 | #if (RUBY_API_VERSION_MAJOR * 100 + RUBY_API_VERSION_MINOR) >= 301
+      |      ^
+/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/backward/cxxanyargs.hpp:540:37: warning: 'RUBY_API_VERSION_MINOR' is not defined, evaluates to 0 [-Wundef]
+  540 | #if (RUBY_API_VERSION_MAJOR * 100 + RUBY_API_VERSION_MINOR) >= 301
+      |                                     ^
+2 warnings generated.
+ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
+ld: warning: search path '/usr/local/Cellar/openssl@3/3.4.1/lib' not found
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -792,12 +820,17 @@ DYLD_LIBRARY_PATH=.:/usr/local/Cellar/ruby/3.4.3/lib ASAN_OPTIONS=detect_leaks=0
 clang++: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
 In file included from conftest.c:1:
 In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby.h:38:
-In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/ruby.h:25:
-In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/defines.h:79:
-/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/missing.h:19:11: fatal error: 'cmath' file not found
-   19 | # include <cmath>
-      |           ^~~~~~~
-1 error generated.
+In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/ruby.h:27:
+In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/internal/anyargs.h:83:
+/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/backward/cxxanyargs.hpp:540:6: warning: 'RUBY_API_VERSION_MAJOR' is not defined, evaluates to 0 [-Wundef]
+  540 | #if (RUBY_API_VERSION_MAJOR * 100 + RUBY_API_VERSION_MINOR) >= 301
+      |      ^
+/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/backward/cxxanyargs.hpp:540:37: warning: 'RUBY_API_VERSION_MINOR' is not defined, evaluates to 0 [-Wundef]
+  540 | #if (RUBY_API_VERSION_MAJOR * 100 + RUBY_API_VERSION_MINOR) >= 301
+      |                                     ^
+2 warnings generated.
+ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
+ld: warning: search path '/usr/local/Cellar/openssl@3/3.4.1/lib' not found
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -809,12 +842,17 @@ DYLD_LIBRARY_PATH=.:/usr/local/Cellar/ruby/3.4.3/lib ASAN_OPTIONS=detect_leaks=0
 clang++: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
 In file included from conftest.c:1:
 In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby.h:38:
-In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/ruby.h:25:
-In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/defines.h:79:
-/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/missing.h:19:11: fatal error: 'cmath' file not found
-   19 | # include <cmath>
-      |           ^~~~~~~
-1 error generated.
+In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/ruby.h:27:
+In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/internal/anyargs.h:83:
+/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/backward/cxxanyargs.hpp:540:6: warning: 'RUBY_API_VERSION_MAJOR' is not defined, evaluates to 0 [-Wundef]
+  540 | #if (RUBY_API_VERSION_MAJOR * 100 + RUBY_API_VERSION_MINOR) >= 301
+      |      ^
+/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/backward/cxxanyargs.hpp:540:37: warning: 'RUBY_API_VERSION_MINOR' is not defined, evaluates to 0 [-Wundef]
+  540 | #if (RUBY_API_VERSION_MAJOR * 100 + RUBY_API_VERSION_MINOR) >= 301
+      |                                     ^
+2 warnings generated.
+ld: warning: ignoring duplicate libraries: '-lcrypto', '-lssl'
+ld: warning: search path '/usr/local/Cellar/openssl@3/3.4.1/lib' not found
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -826,12 +864,20 @@ DYLD_LIBRARY_PATH=.:/usr/local/Cellar/ruby/3.4.3/lib ASAN_OPTIONS=detect_leaks=0
 clang++: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
 In file included from conftest.c:1:
 In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby.h:38:
-In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/ruby.h:25:
-In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/defines.h:79:
-/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/missing.h:19:11: fatal error: 'cmath' file not found
-   19 | # include <cmath>
-      |           ^~~~~~~
-1 error generated.
+In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/ruby.h:27:
+In file included from /usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/internal/anyargs.h:83:
+/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/backward/cxxanyargs.hpp:540:6: warning: 'RUBY_API_VERSION_MAJOR' is not defined, evaluates to 0 [-Wundef]
+  540 | #if (RUBY_API_VERSION_MAJOR * 100 + RUBY_API_VERSION_MINOR) >= 301
+      |      ^
+/usr/local/Cellar/ruby/3.4.3/include/ruby-3.4.0/ruby/backward/cxxanyargs.hpp:540:37: warning: 'RUBY_API_VERSION_MINOR' is not defined, evaluates to 0 [-Wundef]
+  540 | #if (RUBY_API_VERSION_MAJOR * 100 + RUBY_API_VERSION_MINOR) >= 301
+      |                                     ^
+conftest.c:5:35: warning: unused variable 'tuple' [-Wunused-variable]
+    5 |   int main(){ pair<const int,int> tuple = make_pair(1,2); }
+      |                                   ^~~~~
+3 warnings generated.
+ld: warning: ignoring duplicate libraries: '-lc++', '-lcrypto', '-lssl'
+ld: warning: search path '/usr/local/Cellar/openssl@3/3.4.1/lib' not found
 checked program was:
 /* begin */
 1: #include "ruby.h"
