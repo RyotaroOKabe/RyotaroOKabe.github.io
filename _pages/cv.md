@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* Ph.D. in Chemistry, Massachusetts Institute of Technology, MA, USA (Sept. 2021–Present), GPA: 4.3/5.0
-* M.S. in Engineering, Tokyo Institute of Technology, Japan (Sept. 2019–Sept. 2021), GPA: 3.63/4.50
-* B.S. in Engineering, Tokyo Institute of Technology, Japan (Apr. 2016–Sept. 2019), GPA: 3.92/4.00 (Early Graduation)
+* Ph.D. in Chemistry, Massachusetts Institute of Technology, MA, USA (Sept. 2021–Present).
+* M.S. in Engineering, Tokyo Institute of Technology, Japan (Sept. 2019–Sept. 2021).
+* B.S. in Engineering, Tokyo Institute of Technology, Japan (Apr. 2016–Sept. 2019).
 
 Awards and Honors
 ======
