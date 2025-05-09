@@ -10,10 +10,10 @@ redirect_from:
 I am a Ph.D. candidate in Chemistry at the Massachusetts Institute of Technology (MIT), advised by [Prof. Mingda Li](https://web.mit.edu/mingda/www/). My research focuses on the **structure–property relationships** and **inverse design of quantum materials**, integrating **computational physics**, **machine learning**, and **materials informatics**. I aim to uncover novel quantum phenomena and accelerate materials discovery through physics-inspired AI approaches.
 
 My recent work includes:
-- Developing generative models for **quantum materials synthesis**, 
-- Predicting **phonon dispersions** directly from crystal structures using graph neural networks, 
+- Developing generative models for **quantum materials**, 
+- Predicting materials prooperties like **phonon dispersions** directly from crystal structures using graph neural networks, 
 - Exploring **electronic transport in topological materials**, and
-- Designing AI-assisted workflows for **radiation detection** and **Majorana mode identification**.
+- Designing AI-assisted workflows for **radiation detection**.
 
 I previously received my M.S. and B.S. degrees from Tokyo Institute of Technology, and held research internships at IBM Research, Yale University, and Rice University.
 
