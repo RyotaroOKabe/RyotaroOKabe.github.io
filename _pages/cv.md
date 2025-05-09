@@ -17,11 +17,9 @@ Education
 
 Awards and Honors
 ======
-* IBM PhD Fellowship Award
-* Graduate Fellowships (Heiwa Nakajima Foundation, Nakatani Foundation, JASSO)
+* Graduate Fellowships (IBM PhD Fellowship Award, Heiwa Nakajima Foundation, Nakatani Foundation, JASSO)
 * MRS 2025 Spring Graduate Student Silver Award, Best Poster Award
 * Nakatani Foundation research internships (Yale University, Rice University)
-* CHRNS Neutron Scattering Summer School (NIST)
 * NMR Society of Japan Young Scientists Poster Award
 
 Skills
@@ -40,9 +38,9 @@ Experience
   * Conductance prediction using ML in topological materials
 * **Research Assistant**, Tokyo Institute of Technology (Prof. Yoshitaka Ishii) — Oct. 2018–Aug. 2021
   * Developed SSNMR methods and conducted simulation–experiment studies
-* **Intern**, Yale University (Prof. Charles A. Schmuttenmaer) — Jan.–Apr. 2019
+* **Research Intern**, Yale University (Prof. Charles A. Schmuttenmaer) — Jan.–Apr. 2019
   * MOF photosensitizer synthesis, TRTS characterization
-* **Intern**, Rice University (Prof. Angel A. Martí) — Aug.–Sept. 2018
+* **Research Intern**, Rice University (Prof. Angel A. Martí) — Aug.–Sept. 2018
   * Amyloid beta aggregation studies with metal complexes
 
 
