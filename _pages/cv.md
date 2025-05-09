@@ -11,54 +11,41 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D. in Chemistry, Massachusetts Institute of Technology, MA, USA (Sept. 2021–Present), GPA: 4.3/5.0
+* M.S. in Engineering, Tokyo Institute of Technology, Japan (Sept. 2019–Sept. 2021), GPA: 3.63/4.50
+* B.S. in Engineering, Tokyo Institute of Technology, Japan (Apr. 2016–Sept. 2019), GPA: 3.92/4.00 (Early Graduation)
 
-Work experience
+Awards and Honors
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* IBM PhD Fellowship Award
+* Graduate Fellowships (Heiwa Nakajima Foundation, Nakatani Foundation, JASSO)
+* MRS 2025 Spring Graduate Student Silver Award, Best Poster Award
+* Nakatani Foundation research internships (Yale University, Rice University)
+* CHRNS Neutron Scattering Summer School (NIST)
+* NMR Society of Japan Young Scientists Poster Award
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming: Python, CUDA, MATLAB, Git, Bash, LaTeX, HTML, Vim, Tcl
+* ML Frameworks: PyTorch, TensorFlow, Scikit-learn, Transformers, WandB
+* Materials Software: ABINIT, Quantum ESPRESSO, Wannier90, Phonopy, Phono3py, OpenMC, Kwant
+* NMR Simulation: SIMPSON, SpinEvolution
+* Others: Solid-state NMR, Powder XRD, MOF synthesis
 
-Publications
+Experience
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+* **Research Assistant**, MIT (Advisor: Prof. Mingda Li) — Nov. 2021–Present
+  * Developed ML methods for structure–property prediction and radiation source localization
+* **Research Intern**, IBM T.J. Watson Research Center — May–Aug. 2024
+  * Conductance prediction using ML in topological materials
+* **Research Assistant**, Tokyo Institute of Technology (Prof. Yoshitaka Ishii) — Oct. 2018–Aug. 2021
+  * Developed SSNMR methods and conducted simulation–experiment studies
+* **Intern**, Yale University (Prof. Charles A. Schmuttenmaer) — Jan.–Apr. 2019
+  * MOF photosensitizer synthesis, TRTS characterization
+* **Intern**, Rice University (Prof. Angel A. Martí) — Aug.–Sept. 2018
+  * Amyloid beta aggregation studies with metal complexes
+
+
+Service and Leadership
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Treasurer, Japanese Association of MIT
