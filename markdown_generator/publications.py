@@ -3,14 +3,14 @@
 
 # # Publications markdown generator for academicpages
 # 
-# Takes a TSV of publications with metadata and converts them for use with [academicpages.github.io](academicpages.github.io). This is an interactive Jupyter notebook, with the core python code in publications.py. Run either from the `markdown_generator` folder after replacing `publications.tsv` with one that fits your format.
+# Takes a csv of publications with metadata and converts them for use with [academicpages.github.io](academicpages.github.io). This is an interactive Jupyter notebook, with the core python code in publications.py. Run either from the `markdown_generator` folder after replacing `publications.csv` with one that fits your format.
 # 
-# TODO: Make this work with BibTex and other databases of citations, rather than Stuart's non-standard TSV format and citation style.
+# TODO: Make this work with BibTex and other databases of citations, rather than Stuart's non-standard csv format and citation style.
 # 
 
 # ## Data format
 # 
-# The TSV needs to have the following columns: pub_date, title, venue, excerpt, citation, site_url, and paper_url, with a header at the top. 
+# The csv needs to have the following columns: pub_date, title, venue, excerpt, citation, site_url, and paper_url, with a header at the top. 
 # 
 # - `excerpt` and `paper_url` can be blank, but the others must have values. 
 # - `pub_date` must be formatted as YYYY-MM-DD.
@@ -26,16 +26,17 @@
 import pandas as pd
 
 
-# ## Import TSV
+# ## Import csv
 # 
-# Pandas makes this easy with the read_csv function. We are using a TSV, so we specify the separator as a tab, or `\t`.
+# Pandas makes this easy with the read_csv function. We are using a csv, so we specify the separator as a tab, or `\t`.
 # 
 # I found it important to put this data in a tab-separated values format, because there are a lot of commas in this kind of data and comma-separated values can get messed up. However, you can modify the import statement, as pandas also has read_excel(), read_json(), and others.
 
 # In[3]:
 
-publications = pd.read_csv("publications.tsv", sep="\t", header=0)
-publications
+# publications = pd.read_csv("publications.csv", sep="\t", header=0)
+publications = pd.read_csv("publications.csv", header=0)
+# print(publications)
 
 
 # ## Escape special characters
@@ -57,12 +58,13 @@ def html_escape(text):
 
 # ## Creating the markdown files
 # 
-# This is where the heavy lifting is done. This loops through all the rows in the TSV dataframe, then starts to concatentate a big string (```md```) that contains the markdown for each type. It does the YAML metadata first, then does the description for the individual page. If you don't want something to appear (like the "Recommended citation")
+# This is where the heavy lifting is done. This loops through all the rows in the csv dataframe, then starts to concatentate a big string (```md```) that contains the markdown for each type. It does the YAML metadata first, then does the description for the individual page. If you don't want something to appear (like the "Recommended citation")
 
 # In[5]:
 
 import os
 for row, item in publications.iterrows():
+    print(item)
     
     md_filename = str(item.pub_date) + "-" + item.url_slug + ".md"
     html_filename = str(item.pub_date) + "-" + item.url_slug
@@ -83,7 +85,7 @@ for row, item in publications.iterrows():
     
     md += "\nvenue: '" + html_escape(item.venue) + "'"
     
-    # Add category field - you can modify this logic based on venue or add a category column to your TSV
+    # Add category field - you can modify this logic based on venue or add a category column to your csv
     if 'journal' in item.venue.lower() or 'arxiv' in item.venue.lower():
         md += "\ncategory: manuscripts"
     elif 'conference' in item.venue.lower() or 'proceeding' in item.venue.lower():
