@@ -11,5 +11,4 @@ citation: 'Okabe, R., Li, M., Iwasaki, Y., Regnault, N., Felser, C., Shirai, M.,
 ---
 
 <a href='https://doi.org/10.1109/LMAG.2023.3320888'>Download paper here</a>
-
 Comprehensive overview of materials informatics approaches for developing and discovering next-generation magnetic materials.

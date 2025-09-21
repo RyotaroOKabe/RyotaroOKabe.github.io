@@ -11,5 +11,4 @@ citation: 'Drucker, N.C., Nguyen, T., Mandal, M., Siriviboon, P., Quan, Y., Boon
 ---
 
 <a href='https://arxiv.org/abs/2401.17141'>Download paper here</a>
-
 Study of incipient nematicity arising from electron flat bands in kagome metal systems.

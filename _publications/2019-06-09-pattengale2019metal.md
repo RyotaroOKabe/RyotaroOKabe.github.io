@@ -11,5 +11,4 @@ citation: 'Pattengale, B., Neu, J., Ostresh, S., Hu, G., Spies, J.A., Okabe, R.,
 ---
 
 <a href='https://doi.org/10.1021/jacs.9b04338'>Download paper here</a>
-
 Investigation of metal-organic framework photoconductivity using time-resolved terahertz spectroscopy techniques.

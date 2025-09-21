@@ -12,7 +12,5 @@ citation: 'Mandal, M., Chotrattanapituk, A., Woller, K., Xu, H., Mao, N., Okabe,
 
 <a href='https://doi.org/10.1063/5.0181361'>Download paper here</a>
 
-
 <a href='https://news.mit.edu/2024/new-approach-fine-tuning-quantum-materials-0812'>MIT News</a>
-
 Precise control of Fermi level in topological Weyl semimetals through fast ion implantation techniques.

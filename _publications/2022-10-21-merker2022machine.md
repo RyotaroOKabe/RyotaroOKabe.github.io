@@ -11,5 +11,4 @@ citation: 'Merker, H.A., Heiberger, H., Nguyen, L., Liu, T., Chen, Z., Andrejevi
 ---
 
 <a href='https://www.cell.com/iscience/fulltext/S2589-0042(22)01464-X'>Download paper here</a>
-
 Development of machine learning classifiers for predicting magnetic properties directly from atomic coordinates.

@@ -11,5 +11,4 @@ citation: 'Pattengale, B., Freeze, J.G., Guberman-Pfeffer, M., Okabe, R., Ostres
 ---
 
 <a href='https://doi.org/10.1039/D0SC04302H'>Download paper here</a>
-
 Development and characterization of conductive metal-organic frameworks as photoanodes for solar energy applications.

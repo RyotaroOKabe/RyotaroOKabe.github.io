@@ -11,5 +11,4 @@ citation: 'Mandal, M., Drucker, N.C., Siriviboon, P., Nguyen, T., Boonkird, A., 
 ---
 
 <a href='https://doi.org/10.1021/acs.chemmater.3c00713'>Download paper here</a>
-
 Materials perspective on topological superconductors, covering synthesis, characterization, and applications.

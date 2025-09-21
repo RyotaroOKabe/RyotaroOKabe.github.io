@@ -11,5 +11,4 @@ citation: 'Siriviboon, P., Fu, C., Landry, M., Okabe, R., Cordova Carrizales, D.
 ---
 
 <a href='https://arxiv.org/abs/2412.03635'>Download paper here</a>
-
 Theoretical framework for X-ray photon correlation spectroscopy with quantum mechanical foundations.
