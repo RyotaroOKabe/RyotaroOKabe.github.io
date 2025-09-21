@@ -9,6 +9,6 @@ category: manuscripts
 paperurl: 'https://doi.org/10.1109/LMAG.2023.3320888'
 citation: 'Okabe, R., Li, M., Iwasaki, Y., Regnault, N., Felser, C., Shirai, M., Kovacs, A., Schrefl, T., &amp; Hirohata, A. (2023). Materials Informatics for the Development and Discovery of Future Magnetic Materials. <i>IEEE Magnetic Letters</i> 14, 1-5.'
 ---
-<a href='https://doi.org/10.1109/LMAG.2023.3320888'>Paper</a> |
+<a href='https://doi.org/10.1109/LMAG.2023.3320888'>Paper</a> 
 
 Comprehensive overview of materials informatics approaches for developing and discovering next-generation magnetic materials.
