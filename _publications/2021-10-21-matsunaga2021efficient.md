@@ -13,5 +13,3 @@ citation: 'Matsunaga, T., Okabe, R., &amp; Ishii, Y. (2021). Efficient solvent s
 <a href='https://doi.org/10.1007/s10858-021-00384-8'>Download paper here</a>
 
 Development of efficient solvent suppression techniques using adiabatic inversion pulses for 1H-detected solid-state NMR experiments.
-
-Recommended citation: Matsunaga, T., Okabe, R., & Ishii, Y. (2021). Efficient solvent suppression with adiabatic inversion for 1H-detected solid-state NMR. <i>Journal of Biomolecular NMR</i> 12, 365-370.

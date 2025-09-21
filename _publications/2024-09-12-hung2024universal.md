@@ -12,6 +12,7 @@ citation: 'Hung, N.T., Okabe, R., Chotrattanapituk, A., &amp; Li, M. (2024). Ens
 
 <a href='https://doi.org/10.1002/adma.202409175'>Download paper here</a>
 
-Development of ensemble-embedding graph neural networks for direct prediction of optical spectra from crystal structures.
 
-Recommended citation: Hung, N.T., Okabe, R., Chotrattanapituk, A., & Li, M. (2024). Ensemble-Embedding Graph Neural Network for Direct Prediction of Optical Spectra from Crystal Structure. <i>Advanced Materials</i>, 2409175.
+<a href='https://www.tohoku.ac.jp/en/press/ai_speeds_up_discovery_of_energy_and_quantum_materials.html'>Tohoku University Research News</a>
+
+Development of ensemble-embedding graph neural networks for direct prediction of optical spectra from crystal structures.
