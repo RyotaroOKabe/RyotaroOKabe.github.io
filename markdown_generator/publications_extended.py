@@ -103,14 +103,15 @@ for row, item in publications.iterrows():
     ## Markdown description for individual page
     
     if len(str(item.paper_url)) > 5:
-        md += "\n\n<a href='" + item.paper_url + "'>Download paper here</a>" 
+        md += "\n<a href='" + item.paper_url + "'>Download paper here</a>" 
     if len(str(item.media_name)) > 5:
-        md += "\n\n<a href='" + item.media_url + "'>" + item.media_name + "</a>" 
+        md += "\n<a href='" + item.media_url + "'>" + item.media_name + "</a>" 
     if len(str(item.github_url)) > 5:
-        md += "\n\n<a href='" + item.github_url + "'>View code on GitHub</a>" 
+        md += "\n<a href='" + item.github_url + "'>View code on GitHub</a>" 
     if len(str(item.data_url)) > 5:
-        md += "\n\n<a href='" + item.data_url + "'>View data page</a>" 
+        md += "\n<a href='" + item.data_url + "'>View data page</a>" 
         
+    md += "\n"
     if len(str(item.excerpt)) > 5:
         md += "\n" + html_escape(item.excerpt) + "\n"
         
