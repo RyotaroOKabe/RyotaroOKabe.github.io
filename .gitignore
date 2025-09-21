@@ -3,6 +3,7 @@ _site/
 
 # Ignore the directory for local files during development
 local/
+vendor/
 
 archives/
 

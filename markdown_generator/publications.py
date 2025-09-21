@@ -83,6 +83,14 @@ for row, item in publications.iterrows():
     
     md += "\nvenue: '" + html_escape(item.venue) + "'"
     
+    # Add category field - you can modify this logic based on venue or add a category column to your TSV
+    if 'journal' in item.venue.lower() or 'arxiv' in item.venue.lower():
+        md += "\ncategory: manuscripts"
+    elif 'conference' in item.venue.lower() or 'proceeding' in item.venue.lower():
+        md += "\ncategory: conferences"
+    else:
+        md += "\ncategory: manuscripts"  # default to manuscripts
+    
     if len(str(item.paper_url)) > 5:
         md += "\npaperurl: '" + item.paper_url + "'"
     
