@@ -36,6 +36,18 @@ def generate_publications_from_csv():
         title = str(item.title) if pd.notna(item.title) else f"Publication {row+1}"
         venue = str(item.venue) if pd.notna(item.venue) else "Journal"
         
+        # Ensure date format is YYYY-MM-DD for proper sorting
+        try:
+            from datetime import datetime
+            # Try to parse and reformat the date
+            if pub_date != "2024-01-01":  # Don't reformat the default date
+                parsed_date = datetime.strptime(pub_date, "%Y-%m-%d")
+                pub_date = parsed_date.strftime("%Y-%m-%d")
+        except ValueError:
+            # If date parsing fails, use the default
+            pub_date = "2024-01-01"
+            print(f"Warning: Invalid date format '{item.pub_date}' for '{title}', using default date")
+        
         # Generate URL slug from title if not provided
         if pd.notna(item.url_slug) and str(item.url_slug).strip():
             url_slug = str(item.url_slug).strip()
