@@ -7,12 +7,11 @@ date: 2024-06-01
 venue: 'Applied Physics Reviews'
 category: manuscripts
 paperurl: 'https://doi.org/10.1063/5.0181361'
-MIT News: 'https://news.mit.edu/2024/new-approach-fine-tuning-quantum-materials-0812'
 citation: 'Mandal, M., Chotrattanapituk, A., Woller, K., Xu, H., Mao, N., Okabe, R., Boonkird, A., Nguyen, T., Drucker, N.C., Momiki, T., Li, J., Kong, J., &amp; Li, M. (2024). Precise Fermi-level engineering in a topological Weyl semimetal via fast ion implantation. <i>Applied Physics Reviews</i> 11, 021429.'
 ---
 
-Precise control of Fermi level in topological Weyl semimetals through fast ion implantation techniques.
+<a href='https://doi.org/10.1063/5.0181361'>Download paper here</a>
 
-[Download paper here](https://doi.org/10.1063/5.0181361)
+Precise control of Fermi level in topological Weyl semimetals through fast ion implantation techniques.
 
 Recommended citation: Mandal, M., Chotrattanapituk, A., Woller, K., Xu, H., Mao, N., Okabe, R., Boonkird, A., Nguyen, T., Drucker, N.C., Momiki, T., Li, J., Kong, J., & Li, M. (2024). Precise Fermi-level engineering in a topological Weyl semimetal via fast ion implantation. <i>Applied Physics Reviews</i> 11, 021429.
