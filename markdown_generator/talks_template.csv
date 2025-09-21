@@ -1,0 +1,3 @@
+title,type,url_slug,venue,date,location,talk_url,description
+"[Your Talk Title]","[Talk/Poster/Invited Talk/Tutorial]",url-friendly-slug,"[Institution/Conference Name]",YYYY-MM-DD,"[City, State/Country]","[URL to talk info/slides]","[Description of the talk content and key points]"
+"[Your Talk Title 2]","[Talk/Poster/Invited Talk/Tutorial]",url-friendly-slug-2,"[Institution/Conference Name 2]",YYYY-MM-DD,"[City, State/Country 2]","[URL to talk info/slides 2]","[Description of the talk content and key points 2]"
