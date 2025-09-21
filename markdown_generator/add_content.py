@@ -15,6 +15,9 @@ def add_publication():
     citation = input("Full citation: ")
     paper_url = input("Paper URL (optional): ")
     slides_url = input("Slides URL (optional): ")
+    github_url = input("GitHub repository URL (optional): ")
+    database_url = input("Database page URL (optional): ")
+    figure = input("Figure filename (in images/ folder, optional): ")
     
     # Generate URL slug from title
     url_slug = title.lower().replace(' ', '-').replace(':', '').replace(',', '').replace('.', '')
@@ -42,7 +45,10 @@ def add_publication():
         'url_slug': url_slug,
         'paper_url': paper_url,
         'slides_url': slides_url,
-        'category': category
+        'category': category,
+        'github_url': github_url,
+        'database_url': database_url,
+        'figure': figure
     }
     
     # Read existing CSV and append new row

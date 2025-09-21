@@ -89,6 +89,22 @@ def generate_publications_from_csv():
         # Add slides URL
         if pd.notna(item.slides_url) and len(str(item.slides_url).strip()) > 5:
             md += f"slidesurl: '{item.slides_url}'\n"
+
+        # add media URL
+        if pd.notna(item.media_url) and len(str(item.media_url).strip()) > 5:
+            md += f"{item.media_name}: '{item.media_url}'\n"
+
+        # Add GitHub URL
+        if pd.notna(item.github_url) and len(str(item.github_url).strip()) > 5:
+            md += f"github: '{item.github_url}'\n"
+        
+        # Add database page URL
+        if pd.notna(item.data_url) and len(str(item.data_url).strip()) > 5:
+            md += f"data: '{item.data_url}'\n"
+        
+        # Add figure/image
+        if pd.notna(item.figure) and len(str(item.figure).strip()) > 3:
+            md += f"image: '{item.figure}'\n"
         
         # Add citation
         if pd.notna(item.citation) and len(str(item.citation).strip()) > 5:
@@ -106,6 +122,12 @@ def generate_publications_from_csv():
         
         if pd.notna(item.paper_url) and len(str(item.paper_url).strip()) > 5:
             md += f"[Download paper here]({item.paper_url})\n\n"
+        
+        if pd.notna(item.github_url) and len(str(item.github_url).strip()) > 5:
+            md += f"[View code on GitHub]({item.github_url})\n\n"
+        
+        if pd.notna(item.data_url) and len(str(item.data_url).strip()) > 5:
+            md += f"[View data page]({item.data_url})\n\n"
         
         # Add citation
         if pd.notna(item.citation) and len(str(item.citation).strip()) > 5:
