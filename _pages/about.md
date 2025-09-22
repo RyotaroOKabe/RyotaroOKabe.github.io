@@ -15,7 +15,7 @@ My recent work includes:
 - Exploring **electronic transport in topological materials**, and
 - Designing AI-assisted workflows for **radiation detection**.
 
-I previously received my M.S. and B.S. degrees from Tokyo Institute of Technology, and held research internships at IBM Research, Yale University, and Rice University.
+I previously received my M.S. and B.S. degrees from Institute of Science Tokyo (formerly Tokyo Institute of Technology), and held research internships at IBM Research, Yale University, and Rice University.
 
 ---
 
