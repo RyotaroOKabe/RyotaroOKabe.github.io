@@ -104,8 +104,23 @@ for row, item in publications.iterrows():
     
     if len(str(item.paper_url)) > 5:
         md += "\n<a href='" + item.paper_url + "'>Paper</a> /" 
-    if len(str(item.media_name)) > 5:
-        md += "\n<a href='" + item.media_url + "'>" + item.media_name + "</a> /" 
+    # if len(str(item.media_name)) > 5:
+    #     md += "\n<a href='" + item.media_url + "'>" + item.media_name + "</a> /" 
+    if len(str(item.media_url)) > 5:
+        print(type(item.media_url), item.media_url)
+        media_dict = {}
+        try:
+            # Try to evaluate the string as a dictionary
+            if isinstance(item.media_url, str) and item.media_url.strip().startswith("{"):
+                import ast
+                media_dict = ast.literal_eval(item.media_url)
+            elif isinstance(item.media_url, dict):
+                media_dict = item.media_url
+        except Exception:
+            media_dict = {}
+        print(type(media_dict), media_dict)
+        for media_name, media_url in media_dict.items():
+            md += "\n<a href='" + media_url + "'>" + media_name + "</a> /" 
     if len(str(item.github_url)) > 5:
         md += "\n<a href='" + item.github_url + "'>GitHub</a> /" 
     if len(str(item.data_url)) > 5:
