@@ -15,7 +15,7 @@ citation: 'Okabe, R., Cheng, M., Chotrattanapituk, A., Mandal, M., Mak, K., Cord
 <a href='https://doi.org/10.6084/m9.figshare.c.7283062.v5'>Data page</a> /
 
 <a href='https://doi.org/10.1038/s41563-025-02355-ytarget='_blank' rel='noopener'>
-	<img src={'images_pub/okabe2025structural.png' | relative_url }}
+	<img src="{{'images_pub/okabe2025structural.png' | relative_url}}"
 	style='max-width:80%; height:auto; display:block; margin:1rem auto;'>
 </a>
 
