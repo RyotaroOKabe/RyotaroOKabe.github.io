@@ -24,6 +24,7 @@
 # In[2]:
 
 import pandas as pd
+import re
 
 
 # ## Import csv
@@ -55,7 +56,28 @@ def html_escape(text):
     """Produce entities within text."""
     return "".join(html_escape_table.get(c,c) for c in text)
 
+# write a function that can make the specified part to be bold (e.g. my name in the citation)
+def bold_name_in_citation(citation: str,
+                          names=None) -> str:
+    """
+    Wrap occurrences of your name(s) with <strong>…</strong>.
+    If already wrapped, it stays wrapped (no duplicates).
+    """
+    if not citation:
+        return citation
+    if names is None:
+        names = ["Okabe, R.", "R. Okabe", "Ryotaro Okabe"]
 
+    text = str(citation)
+    for n in names:
+        if not n:
+            continue
+        # Match either already-strong-wrapped name OR plain name;
+        # replace whole match with <strong>name</strong>
+        pattern = re.compile(r'(?:<strong>)?(' + re.escape(n) + r')(?:</strong>)?')
+        text = pattern.sub(r'<strong>\1</strong>', text, count=1)
+    return text
+    
 # ## Creating the markdown files
 # 
 # This is where the heavy lifting is done. This loops through all the rows in the csv dataframe, then starts to concatentate a big string (```md```) that contains the markdown for each type. It does the YAML metadata first, then does the description for the individual page. If you don't want something to appear (like the "Recommended citation")
@@ -96,7 +118,9 @@ for row, item in publications.iterrows():
     if len(str(item.paper_url)) > 5:
         md += "\npaperurl: '" + item.paper_url + "'"
     
-    md += "\ncitation: '" + html_escape(item.citation) + "'"
+    # md += "\ncitation: '" + html_escape(item.citation) + "'"
+    citation_update = bold_name_in_citation(citation=html_escape(item.citation))
+    md += "\ncitation: '" + citation_update + "'"
     
     md += "\n---"
     
