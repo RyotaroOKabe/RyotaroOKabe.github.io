@@ -14,11 +14,9 @@ citation: 'Okabe, R., Cheng, M., Chotrattanapituk, A., Mandal, M., Mak, K., Cord
 <a href='https://github.com/RyotaroOKabe/SCIGEN'>GitHub</a> /
 <a href='https://doi.org/10.6084/m9.figshare.c.7283062.v5'>Data page</a> /
 
-<a href="https://doi.org/10.1038/s41563-025-02355-y" target="_blank" rel="noopener">
-  <img src="{{ '/images_pub/okabe2025structural.png' | relative_url }}"
-       alt="Generated structures illustrating symmetry-aware constraints in SCIGEN"
-       style="max-width:100%; height:auto; display:block; margin:1rem auto;">
+<a href='https://doi.org/10.1038/s41563-025-02355-ytarget='_blank' rel='noopener'>
+	<img src={'images_pub/okabe2025structural.png' | relative_url }}
+	style='max-width:80%; height:auto; display:block; margin:1rem auto;'>
 </a>
 
 We present a novel approach to integrating structural constraints in generative models for quantum material discovery, enabling more accurate predictions of material properties through advanced machine learning techniques.
-

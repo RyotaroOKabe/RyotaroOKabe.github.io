@@ -110,7 +110,21 @@ for row, item in publications.iterrows():
         md += "\n<a href='" + item.github_url + "'>GitHub</a> /" 
     if len(str(item.data_url)) > 5:
         md += "\n<a href='" + item.data_url + "'>Data page</a> /" 
-        
+    
+    if len(str(item.figure)) > 5:
+       ###
+        # <a href="https://doi.org/10.1038/s41563-025-02355-y" target="_blank" rel="noopener">
+        #   <img src="{{ '/images_pub/okabe2025structural.png' | relative_url }}"
+        #        alt="Generated structures illustrating symmetry-aware constraints in SCIGEN"
+        #        style="max-width:100%; height:auto; display:block; margin:1rem auto;">
+        # </a>
+        # generalize the above code
+        md += "\n\n<a href='" + item.paper_url + "target='_blank' rel='noopener'>" 
+        md += f"\n\t<img src={{'images_pub/" + item.figure + ".png' | relative_url }}" 
+        # md += "\nalt='" + item.figure + "'" 
+        md += "\n\tstyle='max-width:80%; height:auto; display:block; margin:1rem auto;'>"
+        md += "\n</a>"
+
     md += "\n"
     if len(str(item.excerpt)) > 5:
         md += "\n" + html_escape(item.excerpt) + "\n"
