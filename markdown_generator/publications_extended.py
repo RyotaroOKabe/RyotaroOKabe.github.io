@@ -159,9 +159,9 @@ for row, item in publications.iterrows():
         # </a>
         # generalize the above code
         md += "\n\n<a href='" + item.paper_url + "' target='_blank' rel='noopener'>" 
-        md += f"\n\t<img src=" '"{{' + "'images_pub/" + item.figure + ".png' | relative_url" + '}}"' 
+        md += f"\n\t<img src=" '"{{' + "'images_pub/" + item.figure + "' | relative_url" + '}}"' 
         # md += "\nalt='" + item.figure + "'" 
-        md += "\n\tstyle='max-width:90%; height:auto; display:block; margin:1rem auto;'>"
+        md += "\n\tstyle='max-width:95%; height:auto; display:block; margin:1rem auto;'>"
         md += "\n</a>"
 
     md += "\n"

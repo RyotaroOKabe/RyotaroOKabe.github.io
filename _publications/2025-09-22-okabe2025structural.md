@@ -15,8 +15,8 @@ citation: '<strong>Okabe, R.</strong>, Cheng, M., Chotrattanapituk, A., Mandal, 
 <a href='https://doi.org/10.6084/m9.figshare.c.7283062.v5'>Data page</a> /
 
 <a href='https://doi.org/10.1038/s41563-025-02355-y' target='_blank' rel='noopener'>
-	<img src="{{'images_pub/okabe2025structural.png' | relative_url}}"
-	style='max-width:80%; height:auto; display:block; margin:1rem auto;'>
+	<img src="{{'images_pub/okabe2025structural.svg' | relative_url}}"
+	style='max-width:95%; height:auto; display:block; margin:1rem auto;'>
 </a>
 
 We present a novel approach to integrating structural constraints in generative models for quantum material discovery, enabling more accurate predictions of material properties through advanced machine learning techniques.
