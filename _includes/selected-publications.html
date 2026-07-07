@@ -1,0 +1,34 @@
+{% include base_path %}
+
+<section class="selected-publications">
+  <h2 class="selected-publications__title">Selected Publications</h2>
+  <ul class="pub-cards">
+    {% for pub in site.data.selected_publications %}
+      <li class="pub-card">
+        {% if pub.image %}
+          <div class="pub-card__thumb">
+            <img src="{{ base_path }}/images_pub/{{ pub.image }}" alt="{{ pub.image_alt }}" loading="lazy">
+          </div>
+        {% endif %}
+        <div class="pub-card__body">
+          <p class="pub-card__title">
+            {% assign primary = pub.links | first %}
+            {% if primary %}<a href="{{ primary.url }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
+          </p>
+          <p class="pub-card__meta"><em>{{ pub.venue }}</em> &middot; {{ pub.year }}</p>
+          {% if pub.note %}<p class="pub-card__note">{{ pub.note }}</p>{% endif %}
+          {% if pub.links %}
+            <div class="pub-card__links">
+              {% for link in pub.links %}
+                <a class="pub-card__link" href="{{ link.url }}">{{ link.label }}</a>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+  <p class="selected-publications__more">
+    <a href="{{ base_path }}/publications/">All publications &rarr;</a>
+  </p>
+</section>

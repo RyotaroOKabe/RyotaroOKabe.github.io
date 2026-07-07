@@ -1,0 +1,11 @@
+<section class="news">
+  <h2 class="news__title">Recent Highlights</h2>
+  <ul class="news__list">
+    {% for item in site.data.news %}
+      <li class="news__item">
+        <span class="news__date">{{ item.date }}</span>
+        <span class="news__text">{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

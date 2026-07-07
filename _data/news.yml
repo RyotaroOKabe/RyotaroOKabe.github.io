@@ -1,0 +1,17 @@
+# Recent Highlights on the homepage — newest first.
+# date: use YYYY-MM only when the month is verified; otherwise the year only.
+# text: Markdown supported (e.g. *italics* for journal names).
+- date: "2026-05"
+  text: "Preprint *Universal Magnetic Structure Prediction from Atomic Coordinates with Near-Experimental Accuracy* posted to arXiv"
+
+- date: "2026"
+  text: "Review *Artificial intelligence-driven approaches for materials design and discovery* published in *Nature Materials*"
+
+- date: "2025"
+  text: "*Structural Constraint Integration in a Generative Model for the Discovery of Quantum Materials* (SCIGEN) published in *Nature Materials* and featured by MIT News"
+
+- date: "2025-04"
+  text: "Received the MRS Spring Graduate Student Silver Award and Best Poster Award"
+
+- date: "2024-09"
+  text: "Selected for the IBM PhD Fellowship"
