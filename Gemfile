@@ -16,13 +16,23 @@ gem "github-pages", group: :jekyll_plugins
 
 # gem "jekyll"
 
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
+# Temporarily disabled: wdm fails to build its native extension on this
+# Windows setup and is only needed for file watching (jekyll serve --watch /
+# --livereload). Build and `serve --no-watch` work without it.
+# gem "wdm", "~> 0.1.0" if Gem.win_platform?
+
+# Windows has no built-in tzinfo source; required to resolve the site
+# timezone setting in _config.yml on Windows dev machines.
+gem "tzinfo-data", platforms: [:mingw, :x64_mingw, :mswin, :jruby]
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # gem "jekyll-archives"
   gem "jekyll-feed"
   gem 'jekyll-sitemap'
-  gem 'hawkins'
+  # Temporarily disabled: hawkins (livereload) depends on eventmachine, whose
+  # prebuilt Windows binary does not support Ruby 3.4 on this machine.
+  # Re-enable if livereload is needed and eventmachine builds cleanly.
+  # gem 'hawkins'
   gem "webrick", "~> 1.8"
 end

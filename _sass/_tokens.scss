@@ -1,0 +1,137 @@
+/* ==========================================================================
+   DESIGN TOKENS & CSS VARIABLES
+   Palette X: Warm Stone x Royal Blue (see docs/plan/01-design-brief.md)
+   ========================================================================== */
+
+/*
+   Theme resolution:
+   - No data-theme attribute  -> follows OS via prefers-color-scheme (auto)
+   - html[data-theme="light"] -> forced light
+   - html[data-theme="dark"]  -> forced dark
+   The manual toggle (Patch 2) sets data-theme and persists it in localStorage.
+*/
+
+// --------------------------------------------------------------------------
+// Color token maps (single source of truth per theme)
+// --------------------------------------------------------------------------
+
+$tokens-light: (
+  // Base
+  'background-color':         #faf9f7,
+  'text-color':               #1c1917,
+  'text-muted-color':         #57534e,
+  // Surfaces
+  'surface-color':            #f5f4f1,
+  'surface-elevated-color':   #ffffff,
+  'sidebar-background-color': #faf9f7,
+  'footer-background-color':  #f5f4f1,
+  // Borders
+  'border-color':             #e7e5e4,
+  'border-subtle-color':      #efedeb,
+  // Accent & links
+  'primary-color':            #57534e,
+  'accent-color':             #2563eb,
+  'link-color':               #2563eb,
+  'link-color-hover':         #1d4ed8,
+  // Focus (a11y)
+  'focus-ring-color':         rgba(37, 99, 235, 0.5),
+  'focus-ring':               (0 0 0 3px rgba(37, 99, 235, 0.35)),
+  // Code, tags, highlight
+  'code-background-color':    #f5f4f1,
+  'highlight-color':          #fde68a,
+  'tag-background-color':     #f5f4f1,
+  'tag-text-color':           #57534e
+);
+
+$tokens-dark: (
+  // Base
+  'background-color':         #12100e,
+  'text-color':               #f5f5f4,
+  'text-muted-color':         #a8a29e,
+  // Surfaces
+  'surface-color':            #1a1715,
+  'surface-elevated-color':   #201d1a,
+  'sidebar-background-color': #12100e,
+  'footer-background-color':  #171412,
+  // Borders
+  'border-color':             #292524,
+  'border-subtle-color':      #211e1b,
+  // Accent & links
+  'primary-color':            #a8a29e,
+  'accent-color':             #60a5fa,
+  'link-color':               #60a5fa,
+  'link-color-hover':         #93c5fd,
+  // Focus (a11y)
+  'focus-ring-color':         rgba(96, 165, 250, 0.6),
+  'focus-ring':               (0 0 0 3px rgba(96, 165, 250, 0.4)),
+  // Code, tags, highlight
+  'code-background-color':    #1a1715,
+  'highlight-color':          #a16207,
+  'tag-background-color':     #292524,
+  'tag-text-color':           #d6d3d1
+);
+
+@mixin emit-tokens($tokens) {
+  @each $name, $value in $tokens {
+    --#{$name}: #{$value};
+  }
+}
+
+// --------------------------------------------------------------------------
+// Theme-independent tokens (typography, spacing, radii, layout)
+// --------------------------------------------------------------------------
+
+:root {
+  // Font stacks only — no external font loading yet (decided in a later patch)
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Source Serif 4", "Source Serif Pro", Georgia,
+                "Times New Roman", serif;
+  --font-mono: ui-monospace, SFMono-Regular, "Cascadia Code", Consolas,
+               "Liberation Mono", Menlo, monospace;
+
+  // Spacing scale
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+
+  // Radii
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  // Content widths (prose vs. grid sections)
+  --content-width-prose: 42rem;
+  --content-width-wide: 64rem;
+
+  // Card recipe
+  --card-border: 1px solid var(--border-color);
+  --card-radius: var(--radius-md);
+}
+
+// --------------------------------------------------------------------------
+// Theme application
+// --------------------------------------------------------------------------
+
+:root {
+  @include emit-tokens($tokens-light);
+}
+
+// Auto: follow OS preference unless a theme is forced
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    @include emit-tokens($tokens-dark);
+  }
+}
+
+// Forced dark via manual toggle
+html[data-theme="dark"] {
+  @include emit-tokens($tokens-dark);
+}

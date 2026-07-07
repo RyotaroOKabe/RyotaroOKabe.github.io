@@ -1,18 +1,13 @@
 # Authors
 
-Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+Ryotaro Okabe:
+  name: "Ryotaro Okabe"
+  avatar: "RyotaroOkabe.png"
+  bio: "Chemistry Ph.D. Candidate at MIT"
+  location: "Cambridge, MA"
+  employer: "MIT"
+  github: "RyotaroOKabe"
+  twitter: "RyotaroOkabe"
+  googlescholar: "https://scholar.google.com/citations?user=M0gMbZMAAAAJ&hl=en&oi=ao"
+  orcid: "https://orcid.org/0000-0002-5095-5951"
+  linkedin: "ryotaro-okabe-56463b1bb"

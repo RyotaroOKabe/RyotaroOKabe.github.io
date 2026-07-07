@@ -18,6 +18,44 @@
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode" title="Switch to dark mode">
+        <i class="fas fa-moon" aria-hidden="true"></i>
+      </button>
     </div>
   </div>
 </div>
+
+<script>
+  (function() {
+    var toggle = document.getElementById('theme-toggle');
+    if (!toggle) return;
+    var icon = toggle.querySelector('i');
+    var mq = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function effectiveTheme() {
+      var attr = document.documentElement.getAttribute('data-theme');
+      if (attr === 'light' || attr === 'dark') return attr;
+      return mq.matches ? 'dark' : 'light';
+    }
+
+    function render() {
+      var dark = effectiveTheme() === 'dark';
+      icon.className = dark ? 'fas fa-sun' : 'fas fa-moon';
+      var label = dark ? 'Switch to light mode' : 'Switch to dark mode';
+      toggle.setAttribute('aria-label', label);
+      toggle.setAttribute('title', label);
+    }
+
+    toggle.addEventListener('click', function() {
+      var next = effectiveTheme() === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      render();
+    });
+
+    // Keep icon/label in sync with OS changes while in auto mode
+    if (mq.addEventListener) { mq.addEventListener('change', render); }
+    else if (mq.addListener) { mq.addListener(render); }
+    render();
+  })();
+</script>

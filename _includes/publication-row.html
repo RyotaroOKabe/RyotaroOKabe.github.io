@@ -1,0 +1,25 @@
+<li class="pub-row">
+  <p class="pub-row__title">
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}">{{ post.title }}</a>
+    {% else %}
+      <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+    {% endif %}
+  </p>
+  {% if post.venue %}
+    <span class="pub-row__venue">{{ post.venue }}</span>
+  {% endif %}
+  {% if post.citation %}
+    <p class="pub-row__citation">{{ post.citation }}</p>
+  {% endif %}
+  <div class="pub-row__links">
+    {% if post.paperurl %}
+      {% if post.paperurl contains 'arxiv.org' %}
+        <a class="pub-card__link" href="{{ post.paperurl }}">arXiv</a>
+      {% else %}
+        <a class="pub-card__link" href="{{ post.paperurl }}">Paper</a>
+      {% endif %}
+    {% endif %}
+    <a class="pub-card__link" href="{{ base_path }}{{ post.url }}">Details</a>
+  </div>
+</li>

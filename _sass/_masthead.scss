@@ -4,16 +4,11 @@
 
 .masthead {
   position: fixed;
-  background: white;
+  background: var(--background-color);
   border-bottom: 1px solid $border-color;
   height: $masthead-height;
   top: 0;
   width: 100%;
-
-  -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
   z-index: 20;
 
   &__inner-wrap {
@@ -37,6 +32,13 @@
 }
 
 .masthead__menu {
+  display: flex;
+  align-items: center;
+
+  nav {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
 
   ul {
     margin: 0;
@@ -46,13 +48,63 @@
   }
 }
 
+/* Theme toggle button (outside .greedy-nav so the priority-plus menu
+   never hides it and its button styles do not apply) */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-left: var(--space-2);
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--text-muted-color);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: $global-transition;
+
+  &:hover {
+    color: var(--accent-color);
+    background: var(--surface-color);
+    border-color: var(--border-color);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: var(--focus-ring);
+  }
+
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+  }
+}
+
 .masthead__menu-item {
   display: block;
   list-style-type: none;
   white-space: nowrap;
 
   &--lg {
-    padding-right: 3em;
+    padding-right: 1em;
     font-weight: 700;
+
+    @include breakpoint($medium) {
+      padding-right: 3em;
+    }
+
+    a {
+      font-family: var(--font-serif);
+      font-size: 1.1em;
+      color: var(--text-color);
+
+      @include breakpoint($medium) {
+        font-size: 1.3em;
+      }
+    }
   }
 }

@@ -1,0 +1,95 @@
+/* ==========================================================================
+   PUBLICATIONS PAGE (selected cards + year-grouped list)
+   ========================================================================== */
+
+.pub-scholar-note {
+  margin: 0 0 var(--space-6);
+  color: var(--text-muted-color);
+}
+
+/* the archive layout underlines all links; keep pill buttons clean there */
+.archive .pub-card__link {
+  text-decoration: none;
+}
+
+.all-publications {
+  &__title {
+    margin: 0 0 var(--space-2);
+    font-size: $type-size-3;
+  }
+}
+
+.pub-dagger-note {
+  margin: 0 0 var(--space-2);
+  color: var(--text-muted-color);
+  font-size: $type-size-6;
+}
+
+.pub-year {
+  margin: var(--space-6) 0 var(--space-2);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--border-color);
+  font-family: var(--font-serif);
+  font-size: $type-size-4;
+  color: var(--text-muted-color);
+}
+
+.pub-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pub-row {
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--border-subtle-color);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__title {
+    margin: 0 0 var(--space-2);
+    font-size: $type-size-5;
+    font-weight: 600;
+    line-height: 1.4;
+
+    a {
+      color: var(--text-color);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--accent-color);
+      }
+    }
+  }
+
+  &__venue {
+    display: inline-block;
+    margin: 0 0 var(--space-2);
+    padding: 0.15em 0.75em;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    color: var(--text-muted-color);
+    font-size: $type-size-7;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
+  &__citation {
+    margin: 0 0 var(--space-3);
+    color: var(--text-muted-color);
+    font-size: $type-size-6;
+    line-height: 1.6;
+
+    strong {
+      color: var(--text-color);
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+}

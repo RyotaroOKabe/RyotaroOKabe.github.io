@@ -1,0 +1,27 @@
+{% include base_path %}
+{% assign profile = site.data.profile %}
+
+<section class="hero">
+  <div class="hero__text">
+    <h1 class="hero__name">
+      {{ profile.name }}{% if profile.name_japanese %} <span class="hero__name-ja">/ {{ profile.name_japanese }}</span>{% endif %}
+    </h1>
+    <p class="hero__affiliation">{{ profile.affiliation }}</p>
+    <p class="hero__tagline">{{ profile.tagline }}</p>
+    <div class="hero__bio">
+      {{ profile.bio | markdownify }}
+    </div>
+    <nav class="hero__links" aria-label="Primary links">
+      {% for link in profile.links %}
+        {% if link.url contains ':' %}
+          <a class="hero__button" href="{{ link.url }}">{{ link.label }}</a>
+        {% else %}
+          <a class="hero__button" href="{{ base_path }}{{ link.url }}">{{ link.label }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+  </div>
+  <div class="hero__photo">
+    <img src="{{ base_path }}/images/{{ profile.photo }}" alt="{{ profile.photo_alt }}">
+  </div>
+</section>

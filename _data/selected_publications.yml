@@ -1,0 +1,59 @@
+# Selected publications on the homepage (max 5).
+# Reorder / replace entries freely; images live in images_pub/ (optional).
+# Only include links whose targets are verified to exist.
+- title: "Structural Constraint Integration in a Generative Model for the Discovery of Quantum Materials"
+  venue: "Nature Materials"
+  year: 2025
+  image: "okabe2025structural_thumb.png"
+  image_alt: "Overview figure of SCIGEN, a structure-constrained generative model"
+  links:
+    - label: "Paper"
+      url: "https://doi.org/10.1038/s41563-025-02355-y"
+    - label: "Code"
+      url: "https://github.com/RyotaroOKabe/SCIGEN"
+    - label: "MIT News"
+      url: "https://news.mit.edu/2025/new-tool-makes-generative-ai-models-likely-create-breakthrough-materials-0922"
+
+- title: "Virtual Node Graph Neural Network for Full Phonon Prediction"
+  venue: "Nature Computational Science"
+  year: 2024
+  image: "okabe2024virtual_thumb.png"
+  image_alt: "Schematic of the virtual node graph neural network for phonon prediction"
+  links:
+    - label: "Paper"
+      url: "https://doi.org/10.1038/s43588-024-00661-0"
+    - label: "Code"
+      url: "https://github.com/RyotaroOKabe/phonon_prediction"
+    - label: "MIT News"
+      url: "https://news.mit.edu/2024/ai-method-radically-speeds-predictions-materials-thermal-properties-0716"
+
+- title: "Tetris-Inspired Detector with Neural Network for Radiation Mapping"
+  venue: "Nature Communications"
+  year: 2024
+  image: "okabe2024tetris_thumb.png"
+  image_alt: "Tetris-inspired radiation detector concept with neural network reconstruction"
+  links:
+    - label: "Paper"
+      url: "https://doi.org/10.1038/s41467-024-47338-w"
+    - label: "Code"
+      url: "https://github.com/RyotaroOKabe/radiation_mapping"
+    - label: "MIT News"
+      url: "https://news.mit.edu/2024/mit-researchers-develop-tetris-inspired-radiation-detector-0410"
+
+- title: "Large Language Model-Guided Prediction Toward Quantum Materials Synthesis"
+  venue: "arXiv"
+  year: 2024
+  image: "okabe2024large_thumb.png"
+  image_alt: "Diagram of large language model-guided prediction of materials synthesis"
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2410.20976"
+    - label: "Code"
+      url: "https://github.com/RyotaroOKabe/llm4syn"
+
+- title: "Artificial intelligence-driven approaches for materials design and discovery"
+  venue: "Nature Materials"
+  year: 2026
+  links:
+    - label: "Paper"
+      url: "https://doi.org/10.1038/s41563-025-02403-7"

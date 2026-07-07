@@ -1,0 +1,12 @@
+<section class="research-themes">
+  <h2 class="research-themes__title">Research Themes</h2>
+  <div class="research-themes__grid">
+    {% for theme in site.data.research_themes %}
+      <div class="theme-card">
+        <div class="theme-card__icon"><i class="{{ theme.icon }}" aria-hidden="true"></i></div>
+        <h3 class="theme-card__title">{{ theme.title }}</h3>
+        <p class="theme-card__description">{{ theme.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
