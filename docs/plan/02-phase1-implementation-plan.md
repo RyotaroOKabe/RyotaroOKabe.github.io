@@ -111,6 +111,7 @@ Constraints:
   Patch 7a restored them from git history (82ef7f6). Before any future
   regeneration, rework the generator to emit the figure/media_url/github_url
   CSV columns into the body (or to skip files with custom bodies).
-- `_publications/2025-02-05-cheng2025ai.md` (arXiv mini-review) duplicates the
-  published version `2026-02-05-cheng2026ai.md` (Nature Materials). Decide in
-  Phase 2 whether to remove or redirect the preprint page.
+- ~~`_publications/2025-02-05-cheng2025ai.md` (arXiv mini-review) duplicates
+  the published version `2026-02-05-cheng2026ai.md` (Nature Materials).~~
+  Resolved in Patch 10: preprint page deleted; its URL redirects to the
+  published version via `redirect_from`.
