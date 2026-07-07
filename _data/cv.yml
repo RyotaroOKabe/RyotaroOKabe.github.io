@@ -1,0 +1,95 @@
+# CV page content — mirrors files/2026-06-18_cv_RyotaroOKABE.pdf.
+# When the CV PDF is updated, update this file and the pdf path together.
+pdf: "/files/2026-06-18_cv_RyotaroOKABE.pdf"
+pdf_label: "Download full CV (PDF)"
+pdf_date: "June 2026"
+
+education:
+  - degree: "Ph.D. in Chemistry"
+    institution: "Massachusetts Institute of Technology"
+    location: "MA, USA"
+    period: "Sept. 2021 – Sept. 2026 (expected)"
+  - degree: "M.S. in Engineering"
+    institution: "Institute of Science Tokyo"
+    location: "Japan"
+    period: "Sept. 2019 – Sept. 2021"
+  - degree: "B.S. in Engineering"
+    institution: "Institute of Science Tokyo"
+    location: "Japan"
+    period: "Apr. 2016 – Sept. 2019 (Early Graduation)"
+education_notes:
+  - "Teaching: Quantum Mechanics (2021), General Chemistry (2022)"
+  - "Leadership: APS Group on Data Science Student Representative (2026–2028); Japanese Assoc. of MIT, Treasurer (2022–2024); Sidney Pacific Graduate Residence, Officer (2022–2024); Japan–US Science Forum in Boston, Organizer (2022–2024)"
+
+experience:
+  - role: "Research Assistant"
+    org: "Massachusetts Institute of Technology"
+    detail: "Advisor: Prof. Mingda Li"
+    location: "MA, USA"
+    period: "Nov. 2021 – Present"
+    bullets:
+      - "Developed machine learning methods to explore the structure–property relationship in materials (e.g., prediction of phonon dispersion from material structures, generating quantum material candidates)."
+      - "Developed machine learning methods to localize radiation sources with detector arrays."
+  - role: "Research Intern"
+    org: "IBM Thomas J. Watson Research Center"
+    detail: "Mentor: Dr. Ching-Tzu Chen"
+    location: "NY, USA"
+    period: "May – Aug. 2024"
+    bullets:
+      - "High-throughput calculation of electrical conductance in topological interconnect materials."
+      - "Developed machine learning methods to predict the conductance of slab materials."
+  - role: "Research Assistant"
+    org: "Institute of Science Tokyo"
+    detail: "Advisor: Prof. Yoshitaka Ishii"
+    location: "Japan"
+    period: "Oct. 2018 – Aug. 2021"
+    bullets:
+      - "Implemented new schemes of solid-state nuclear magnetic resonance (SSNMR) for selective signal acquisition and evaluated them through multidimensional SSNMR experiments with numerical simulations."
+  - role: "Research Intern"
+    org: "Yale University"
+    detail: "Advisor: Prof. Charles A. Schmuttenmaer"
+    location: "CT, USA"
+    period: "Jan. – Apr. 2019"
+    bullets:
+      - "Synthesized metal-organic frameworks (MOFs) as photosensitizers and characterized them using powder X-ray diffraction, electrochemical experiments, and time-resolved terahertz spectroscopy."
+  - role: "Research Intern"
+    org: "Rice University"
+    detail: "Advisor: Prof. Angel A. Martí"
+    location: "TX, USA"
+    period: "Aug. – Sept. 2018"
+    bullets:
+      - "Observed the aggregation kinetics of Amyloid beta (Aβ) protein and interactions with the metal complex."
+
+awards:
+  - text: "MRS 2025 Spring Graduate Student Silver Award"
+    date: "Apr. 2025"
+  - text: "MRS 2025 Spring Best Poster Award"
+    date: "Apr. 2025"
+  - text: "IBM PhD Fellowship Award (granted 40,000 USD)"
+    date: "Sept. 2024 – Aug. 2025"
+  - text: "NERSC GenAI AY2024 Resource Allocation (6,800 GPU node hours, 1,000 CPU node hours)"
+    date: "Jul. 2024"
+  - text: "JASSO Graduate Fellowship (granted approx. 11,000 USD)"
+    date: "Sept. 2023 – Aug. 2024"
+  - text: "Heiwa Nakajima Foundation Fellowship (granted approx. 70,000 USD)"
+    date: "Sept. 2021 – Aug. 2023"
+  - text: "Best Presentation Award, Master Thesis Midterm Presentation, Tokyo Institute of Technology"
+    date: "Jul. 2020"
+  - text: "NMR Society of Japan Young Scientists Poster Award"
+    date: "Nov. 2020"
+  - text: "Nakatani Foundation Graduate Fellowship (granted approx. 35,000 USD)"
+    date: "Sept. 2019 – Aug. 2021"
+  - text: "Nakatani RIES Fellowship (fully funded research internship at Rice University and Yale University)"
+    date: "Aug. 2018"
+
+skills:
+  - category: "Programming"
+    items: "Python, CUDA, MATLAB, Git, Scripting (Bash), LaTeX, HTML, Vim, Tcl"
+  - category: "Software"
+    items: "Machine learning (PyTorch, TensorFlow, Scikit-learn, PyTorch Lightning, WandB, Transformers), material simulations (ABINIT, Quantum Espresso, VASP, Wannier90, FEFF, Phonopy, Phono3py, OpenMC, Kwant), NMR simulations (SIMPSON, SpinEvolution), Linux, Origin, ChemDraw, Claude Code, Codex"
+  - category: "Material characterization"
+    items: "Solid-state NMR, powder X-ray diffraction, metal-organic framework synthesis"
+
+community_service:
+  - "Journal peer review: Matter, NPJ Quantum Mater., Phys. Rev. Lett., Phys. Rev. Mater., Phys. Rev. A, EPJ Quantum Technol., 2026 Conference on Physics and AI (PAI26) @ Stanford"
+  - "Session chair: APS Global Physics Summit 2026 (MAR-J42, MAR-W27), PAI26"
