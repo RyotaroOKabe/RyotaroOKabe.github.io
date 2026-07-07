@@ -96,14 +96,14 @@ Constraints:
 - Local build verification outside Dropbox, mobile checks, contrast/performance audit.
 
 ## Technical Debt
-- `assets/js/main.min.js` was patched directly (greedy-nav infinite-recursion
-  guard) because no JS bundling environment is set up. The same fix is applied
-  to the source (`assets/js/plugins/jquery.greedy-navigation.js`), so a future
-  rebuild via the npm/uglify pipeline (`package.json`) will preserve it. In
-  Phase 3, set up the bundling pipeline and regenerate `main.min.js` from
-  source instead of editing the minified file.
+- ~~`assets/js/main.min.js` was patched directly (greedy-nav infinite-recursion
+  guard) because no JS bundling environment is set up.~~ Resolved in Patch 11:
+  ran `npm install` + `npm run uglify` to regenerate `main.min.js` from source.
+  The output is byte-identical to the committed file, confirming the Patch 3
+  manual patch exactly matched the pipeline output (no source/minified drift).
+  Going forward, edit `assets/js/plugins/*.js` and run `npm run uglify`.
 - CRLF/LF warnings on git operations: consider adding `.gitattributes` with an
-  explicit line-ending policy (Phase 3 or a dedicated patch).
+  explicit line-ending policy (Phase 3 or a dedicated patch). *(Patch 12)*
 - **Regenerating publication pages from CSV destroys hand-authored content.**
   A pre-baseline regeneration via `markdown_generator/publications.py`
   overwrote custom bodies (figure embeds, Paper/MIT News/GitHub link rows,
