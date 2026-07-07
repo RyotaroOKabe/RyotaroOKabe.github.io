@@ -15,8 +15,15 @@ Every patch follows this cycle:
 1. Propose the patch: purpose / files to edit / expected visual change / rollback method.
 2. Owner approves.
 3. Edit files.
-4. Run `bundle exec jekyll build` to confirm the build passes.
-5. Keep `bundle exec jekyll serve --livereload` available; owner reviews at `http://127.0.0.1:4000/`.
+4. Run `bundle _2.6.8_ exec jekyll build` to confirm the build passes.
+5. Restart `bundle _2.6.8_ exec jekyll serve --no-watch` and verify the actual
+   rendering at `http://localhost:4000/`.
+   - Because of `--no-watch`, every change requires a rebuild + serve restart.
+   - Review via `localhost` (not `127.0.0.1`): built URLs are localhost-based,
+     so a different origin blocks icon fonts via CORS.
+   - Note: `jekyll serve` rebuilds with `site.url` overridden to localhost;
+     serving a plain `jekyll build` output would load CSS from the production
+     site (absolute URLs) and mask local changes.
 6. Present `git diff --stat` and a summary of the changes.
 7. Propose a local commit message; commit if approved.
 8. Move to the next patch.
@@ -87,3 +94,13 @@ Constraints:
 
 ## Phase 3 (unchanged)
 - Local build verification outside Dropbox, mobile checks, contrast/performance audit.
+
+## Technical Debt
+- `assets/js/main.min.js` was patched directly (greedy-nav infinite-recursion
+  guard) because no JS bundling environment is set up. The same fix is applied
+  to the source (`assets/js/plugins/jquery.greedy-navigation.js`), so a future
+  rebuild via the npm/uglify pipeline (`package.json`) will preserve it. In
+  Phase 3, set up the bundling pipeline and regenerate `main.min.js` from
+  source instead of editing the minified file.
+- CRLF/LF warnings on git operations: consider adding `.gitattributes` with an
+  explicit line-ending policy (Phase 3 or a dedicated patch).
