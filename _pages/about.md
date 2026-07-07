@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Ryotaro Okabe / 岡部 遼太郎"
-author_profile: true
+author_profile: false
 redirect_from: 
   - /about/
   - /about.html

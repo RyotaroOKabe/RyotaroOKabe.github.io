@@ -2,17 +2,14 @@
    ARCHIVE
    ========================================================================== */
 
+/* Centered list column, slightly wider than prose (sidebar removed) */
 .archive {
   margin-bottom: 2em;
-
-  @include breakpoint($medium) {
-    @include span(12 of 12);
-  }
-
-  @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-  }
+  float: none;
+  width: 100%;
+  max-width: var(--content-width-wide);
+  margin-left: auto;
+  margin-right: auto;
 
   a {
     text-decoration: underline;
