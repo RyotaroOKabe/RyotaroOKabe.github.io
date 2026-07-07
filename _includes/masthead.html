@@ -15,39 +15,47 @@
             {% endif %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
-          <li class="masthead__menu-item">
-            <button id="theme-toggle" aria-label="Toggle theme" style="background: none; border: none; padding: 0.5rem; cursor: pointer; color: var(--primary-color); font-size: 1rem; transition: color 0.2s; display: inline-flex; align-items: center;">
-              <i class="fas fa-moon" id="theme-icon"></i>
-            </button>
-          </li>
         </ul>
-        <script>
-          (function() {
-            var themeToggle = document.getElementById("theme-toggle");
-            var themeIcon = document.getElementById("theme-icon");
-            if (!themeToggle || !themeIcon) return;
-            
-            function updateIcon(theme) {
-              if (theme === "dark") {
-                themeIcon.className = "fas fa-sun";
-              } else {
-                themeIcon.className = "fas fa-moon";
-              }
-            }
-            
-            var currentTheme = document.documentElement.getAttribute("data-theme") || "light";
-            updateIcon(currentTheme);
-            
-            themeToggle.addEventListener("click", function() {
-              var newTheme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
-              document.documentElement.setAttribute("data-theme", newTheme);
-              localStorage.setItem("theme", newTheme);
-              updateIcon(newTheme);
-            });
-          })();
-        </script>
         <ul class="hidden-links hidden"></ul>
       </nav>
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode" title="Switch to dark mode">
+        <i class="fas fa-moon" aria-hidden="true"></i>
+      </button>
     </div>
   </div>
 </div>
+
+<script>
+  (function() {
+    var toggle = document.getElementById('theme-toggle');
+    if (!toggle) return;
+    var icon = toggle.querySelector('i');
+    var mq = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function effectiveTheme() {
+      var attr = document.documentElement.getAttribute('data-theme');
+      if (attr === 'light' || attr === 'dark') return attr;
+      return mq.matches ? 'dark' : 'light';
+    }
+
+    function render() {
+      var dark = effectiveTheme() === 'dark';
+      icon.className = dark ? 'fas fa-sun' : 'fas fa-moon';
+      var label = dark ? 'Switch to light mode' : 'Switch to dark mode';
+      toggle.setAttribute('aria-label', label);
+      toggle.setAttribute('title', label);
+    }
+
+    toggle.addEventListener('click', function() {
+      var next = effectiveTheme() === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      render();
+    });
+
+    // Keep icon/label in sync with OS changes while in auto mode
+    if (mq.addEventListener) { mq.addEventListener('change', render); }
+    else if (mq.addListener) { mq.addListener(render); }
+    render();
+  })();
+</script>
