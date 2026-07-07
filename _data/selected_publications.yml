@@ -4,7 +4,7 @@
 - title: "Structural Constraint Integration in a Generative Model for the Discovery of Quantum Materials"
   venue: "Nature Materials"
   year: 2025
-  image: "okabe2025structural.png"
+  image: "okabe2025structural_thumb.png"
   image_alt: "Overview figure of SCIGEN, a structure-constrained generative model"
   links:
     - label: "Paper"
@@ -17,7 +17,7 @@
 - title: "Virtual Node Graph Neural Network for Full Phonon Prediction"
   venue: "Nature Computational Science"
   year: 2024
-  image: "okabe2024virtual.png"
+  image: "okabe2024virtual_thumb.png"
   image_alt: "Schematic of the virtual node graph neural network for phonon prediction"
   links:
     - label: "Paper"
@@ -30,7 +30,7 @@
 - title: "Tetris-Inspired Detector with Neural Network for Radiation Mapping"
   venue: "Nature Communications"
   year: 2024
-  image: "okabe2024tetris.png"
+  image: "okabe2024tetris_thumb.png"
   image_alt: "Tetris-inspired radiation detector concept with neural network reconstruction"
   links:
     - label: "Paper"
@@ -43,7 +43,7 @@
 - title: "Large Language Model-Guided Prediction Toward Quantum Materials Synthesis"
   venue: "arXiv"
   year: 2024
-  image: "okabe2024large.png"
+  image: "okabe2024large_thumb.png"
   image_alt: "Diagram of large language model-guided prediction of materials synthesis"
   links:
     - label: "arXiv"
