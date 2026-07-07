@@ -1,0 +1,16 @@
+# Research theme cards on the homepage — keep descriptions to 1-2 sentences.
+- title: "Generative Models for Quantum Materials"
+  icon: "fas fa-atom"
+  description: "Integrating structural constraints into generative AI (SCIGEN) for the inverse design of quantum material candidates."
+
+- title: "Graph Neural Networks for Materials Properties"
+  icon: "fas fa-project-diagram"
+  description: "Predicting phonon dispersions, optical spectra, and magnetism directly from crystal structures."
+
+- title: "LLMs for Materials Synthesis"
+  icon: "fas fa-comment-dots"
+  description: "Language-model-guided prediction of synthesis routes and conditions for quantum materials."
+
+- title: "AI-Assisted Detection and Scientific Instrumentation"
+  icon: "fas fa-satellite-dish"
+  description: "Tetris-inspired detector design and neural-network-based radiation mapping."

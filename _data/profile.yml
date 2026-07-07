@@ -1,0 +1,30 @@
+# Homepage hero content — edit this file to update the top of the site.
+name: "Ryotaro Okabe"
+name_japanese: "岡部 遼太郎"
+affiliation: "Ph.D. Candidate in Chemistry, Massachusetts Institute of Technology"
+tagline: "Physics-informed AI for quantum materials discovery"
+photo: "RyotaroOkabe.png"
+photo_alt: "Portrait of Ryotaro Okabe"
+
+# Bio supports Markdown (links, bold, etc.)
+bio: >-
+  I am a Ph.D. candidate in Chemistry at MIT, advised by
+  [Prof. Mingda Li](https://qm.mit.edu/) in the Quantum Measurement Group.
+  My research develops physics-informed machine learning methods for quantum
+  materials discovery and design, spanning generative models, graph neural
+  networks, and LLM-guided synthesis prediction. Before MIT, I received my
+  M.S. and B.S. from the Institute of Science Tokyo and conducted research
+  internships at IBM Research, Yale, and Rice.
+
+# Primary buttons (internal URLs are prefixed with base_path automatically)
+links:
+  - label: "CV"
+    url: "/cv/"
+  - label: "Publications"
+    url: "/publications/"
+  - label: "Google Scholar"
+    url: "https://scholar.google.com/citations?user=M0gMbZMAAAAJ&hl=en&oi=ao"
+  - label: "GitHub"
+    url: "https://github.com/RyotaroOKabe"
+  - label: "Email"
+    url: "mailto:rokabe@mit.edu"
