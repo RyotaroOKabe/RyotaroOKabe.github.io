@@ -160,6 +160,11 @@ exclude:
   - "*.sublime-workspace"
   - .asset-cache
   - .bundle
+  - .claude
+  - archives
+  - docs
+  - markdown_generator
+  - resources
   - .github
   - .jekyll-assets-cache
   - .sass-cache
