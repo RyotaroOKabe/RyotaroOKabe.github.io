@@ -71,13 +71,15 @@
 /* Primary notice */
 
 .notice--primary {
-  @include notice($primary-color);
+  /* concrete color required: the notice mixin uses Sass color math (mix/rgba),
+     which cannot operate on CSS custom properties */
+  @include notice(#57534e);
 }
 
 /* Info notice */
 
 .notice--info {
-  @include notice($info-color);
+  @include notice(#2563eb);
 }
 
 /* Warning notice */
