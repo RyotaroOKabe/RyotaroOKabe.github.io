@@ -1,0 +1,14 @@
+{
+  "search.exclude": {
+    "vendor/": true,
+    "_site/": true,
+    ".sass-cache/": true,
+    ".jekyll-metadata": true
+  },
+  "files.exclude": {
+    "vendor/": true,
+    "_site/": true,
+    ".sass-cache/": true,
+    ".jekyll-metadata": true
+  }
+}
