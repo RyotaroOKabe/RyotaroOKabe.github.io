@@ -104,3 +104,13 @@ Constraints:
   source instead of editing the minified file.
 - CRLF/LF warnings on git operations: consider adding `.gitattributes` with an
   explicit line-ending policy (Phase 3 or a dedicated patch).
+- **Regenerating publication pages from CSV destroys hand-authored content.**
+  A pre-baseline regeneration via `markdown_generator/publications.py`
+  overwrote custom bodies (figure embeds, Paper/MIT News/GitHub link rows,
+  bold author names) and injected a duplicate "Recommended citation" line;
+  Patch 7a restored them from git history (82ef7f6). Before any future
+  regeneration, rework the generator to emit the figure/media_url/github_url
+  CSV columns into the body (or to skip files with custom bodies).
+- `_publications/2025-02-05-cheng2025ai.md` (arXiv mini-review) duplicates the
+  published version `2026-02-05-cheng2026ai.md` (Nature Materials). Decide in
+  Phase 2 whether to remove or redirect the preprint page.
