@@ -28,7 +28,9 @@
       </li>
     {% endfor %}
   </ul>
-  <p class="selected-publications__more">
-    <a href="{{ base_path }}/publications/">All publications &rarr;</a>
-  </p>
+  {% unless include.hide_more %}
+    <p class="selected-publications__more">
+      <a href="{{ base_path }}/publications/">All publications &rarr;</a>
+    </p>
+  {% endunless %}
 </section>
