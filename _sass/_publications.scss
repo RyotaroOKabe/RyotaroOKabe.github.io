@@ -19,6 +19,12 @@
   }
 }
 
+.pub-dagger-note {
+  margin: 0 0 var(--space-2);
+  color: var(--text-muted-color);
+  font-size: $type-size-6;
+}
+
 .pub-year {
   margin: var(--space-6) 0 var(--space-2);
   padding-bottom: var(--space-2);
