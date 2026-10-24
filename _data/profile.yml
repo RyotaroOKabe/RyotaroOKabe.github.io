@@ -1,20 +1,27 @@
 # Homepage hero content — edit this file to update the top of the site.
 name: "Ryotaro Okabe"
 name_japanese: "岡部 遼太郎"
-affiliation: "Ph.D. Candidate in Chemistry, Massachusetts Institute of Technology"
-tagline: "Physics-informed AI for quantum materials discovery"
+affiliation: "Argonne Scholar (Maria Goeppert Mayer Fellow), X-ray Science Division, Argonne National Laboratory"
+tagline: "Physics-informed AI for quantum materials: from discovery to autonomous X-ray experiments"
 photo: "RyotaroOkabe.png"
 photo_alt: "Portrait of Ryotaro Okabe"
 
 # Bio supports Markdown (links, bold, etc.)
-bio: >-
-  I am a Ph.D. candidate in Chemistry at MIT, advised by
-  [Prof. Mingda Li](https://qm.mit.edu/) in the Quantum Measurement Group.
-  My research develops physics-informed machine learning methods for quantum
-  materials discovery and design, spanning generative models, graph neural
-  networks, and LLM-guided synthesis prediction. Before MIT, I received my
-  M.S. and B.S. from the Institute of Science Tokyo and conducted research
-  internships at IBM Research, Yale, and Rice.
+bio: |-
+  I am an Argonne Scholar and Maria Goeppert Mayer Fellow in the X-ray Science Division
+  at Argonne National Laboratory, working with
+  [Dr. Haidan Wen](https://www.anl.gov/profile/haidan-wen) and
+  [Dr. Mathew Cherukara](https://www.anl.gov/profile/mathew-joseph-cherukara).
+  My current research develops physics-informed AI and agent-based methods that learn
+  the dynamics of quantum materials from time-resolved X-ray data at the Advanced Photon
+  Source and help decide what to measure next, toward autonomous experiments.
+
+  I received my Ph.D. in Chemistry from MIT in 2026, advised by
+  [Prof. Mingda Li](https://qm.mit.edu/) in the Quantum Measurement Group, where I
+  developed generative models, graph neural networks, and LLM-guided methods for quantum
+  materials discovery and design. Before MIT, I received my M.S. and B.S. from the
+  Institute of Science Tokyo and conducted research internships at IBM Research, Yale,
+  and Rice.
 
 # Primary buttons (internal URLs are prefixed with base_path automatically)
 links:

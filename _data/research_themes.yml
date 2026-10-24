@@ -1,4 +1,8 @@
 # Research theme cards on the homepage — keep descriptions to 1-2 sentences.
+- title: "AI Agents for Autonomous X-ray Experiments"
+  icon: "fas fa-robot"
+  description: "Physics-informed, agent-based methods that learn non-equilibrium dynamics from time-resolved X-ray data and propose the next measurement, toward closed-loop experiments at the Advanced Photon Source."
+
 - title: "Generative Models for Quantum Materials"
   icon: "fas fa-atom"
   description: "Integrating structural constraints into generative AI (SCIGEN) for the inverse design of quantum material candidates."
@@ -7,10 +11,6 @@
   icon: "fas fa-project-diagram"
   description: "Predicting phonon dispersions, optical spectra, and magnetism directly from crystal structures."
 
-- title: "LLMs for Materials Synthesis"
+- title: "LLM Agents for Synthesis and Lab Automation"
   icon: "fas fa-comment-dots"
-  description: "Language-model-guided prediction of synthesis routes and conditions for quantum materials."
-
-- title: "AI-Assisted Detection and Scientific Instrumentation"
-  icon: "fas fa-satellite-dish"
-  description: "Tetris-inspired detector design and neural-network-based radiation mapping."
+  description: "Language-model-guided synthesis prediction and agentic AI that runs quantum sensing experiments, extending earlier work on neural-network-driven radiation detectors."
