@@ -1,5 +1,33 @@
-# Normalize line endings and ensure UTF-8 for Markdown & Jekyll content
-*.md   text eol=lf
-*.html text eol=lf
-*.yml  text eol=lf
-*.yaml text eol=lf
+# Line-ending policy: LF in the repo and in working trees on every OS.
+# (The site was edited from Windows and macOS; CRLF checkouts produced
+# whole-file diffs with no content change.)
+* text=auto eol=lf
+
+*.md    text eol=lf
+*.html  text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.scss  text eol=lf
+*.css   text eol=lf
+*.js    text eol=lf
+*.json  text eol=lf
+*.py    text eol=lf
+*.rb    text eol=lf
+*.csv   text eol=lf
+*.bib   text eol=lf
+*.svg   text eol=lf
+*.txt   text eol=lf
+Gemfile text eol=lf
+
+# Binary assets
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.eot  binary
+*.ttf  binary
+*.woff binary
+*.woff2 binary
+*.docx binary

@@ -2,7 +2,7 @@
 title: "Challenges and Opportunities of Machine Learning on Neutron and X-ray Scattering"
 collection: publications
 permalink: /publication/2022-11-02-drucker2022challenges
-excerpt: 'Analysis of challenges and opportunities in applying machine learning to neutron and X-ray scattering data analysis.'
+excerpt: 'A feature article surveying how machine learning is reshaping neutron and X-ray scattering, from phase mapping and crystallographic analysis to super-resolution small-angle scattering, and the criteria that determine when ML-based analysis succeeds.'
 date: 2022-11-02
 venue: 'Synchrotron Radiation News'
 category: manuscripts
@@ -11,4 +11,4 @@ citation: 'Drucker, N.C., Liu, T., Chen, Z., <strong>Okabe, R.</strong>, Chotrat
 ---
 <a href='https://doi.org/10.1080/08940886.2022.2112498'>Paper</a> /
 
-Analysis of challenges and opportunities in applying machine learning to neutron and X-ray scattering data analysis.
+A feature article surveying how machine learning is reshaping neutron and X-ray scattering, from phase mapping and crystallographic analysis to super-resolution small-angle scattering, and the criteria that determine when ML-based analysis succeeds.

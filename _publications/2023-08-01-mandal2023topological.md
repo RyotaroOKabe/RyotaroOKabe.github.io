@@ -2,7 +2,7 @@
 title: "Topological superconductors from a materials perspective"
 collection: publications
 permalink: /publication/2023-08-01-mandal2023topological
-excerpt: 'Materials perspective on topological superconductors, covering synthesis, characterization, and applications.'
+excerpt: 'A materials perspective on topological superconductors: a short review of the basics and theory, an overview of natural and synthetic candidate materials, and the experimental signatures used to identify them, with a call for new signatures and stronger computational support.'
 date: 2023-08-01
 venue: 'Chemistry of Materials'
 category: manuscripts
@@ -11,4 +11,4 @@ citation: 'Mandal, M., Drucker, N.C., Siriviboon, P., Nguyen, T., Boonkird, A., 
 ---
 <a href='https://doi.org/10.1021/acs.chemmater.3c00713'>Paper</a> /
 
-Materials perspective on topological superconductors, covering synthesis, characterization, and applications.
+A materials perspective on topological superconductors: a short review of the basics and theory, an overview of natural and synthetic candidate materials, and the experimental signatures used to identify them, with a call for new signatures and stronger computational support.

@@ -2,7 +2,7 @@
 title: "Incipient Nematicity from Electron Flat Bands in a Kagome Metal"
 collection: publications
 permalink: /publication/2024-01-30-drucker2024incipient
-excerpt: 'Study of incipient nematicity arising from electron flat bands in kagome metal systems.'
+excerpt: 'Thermodynamic, dilatometry, resonant X-ray, inelastic neutron, Larmor diffraction, and thermoelectric measurements reveal an unconventional, incipient nematic order in the kagome metal CoSn near 225 K, explained by thermally excited flat bands that promote symmetry breaking.'
 date: 2024-01-30
 venue: 'arXiv'
 category: manuscripts
@@ -11,4 +11,4 @@ citation: 'Drucker, N.C., Nguyen, T., Mandal, M., Siriviboon, P., Quan, Y., Boon
 ---
 <a href='https://arxiv.org/abs/2401.17141'>Paper</a> /
 
-Study of incipient nematicity arising from electron flat bands in kagome metal systems.
+Thermodynamic, dilatometry, resonant X-ray, inelastic neutron, Larmor diffraction, and thermoelectric measurements reveal an unconventional, incipient nematic order in the kagome metal CoSn near 225 K, explained by thermally excited flat bands that promote symmetry breaking.
