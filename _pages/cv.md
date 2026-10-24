@@ -9,14 +9,30 @@ redirect_from:
 
 {% include base_path %}
 {% assign cv = site.data.cv %}
+{% comment %}
+  Pick the newest CV PDF automatically: any files/YYYY-MM-DD_cv_RyotaroOKABE.pdf.
+  ISO dates sort lexicographically, so the last path is the newest. To publish a
+  new CV, just export the PDF into files/ with that name pattern.
+{% endcomment %}
+{% assign cv_pdfs = site.static_files
+   | where_exp: "f", "f.path contains '/files/'"
+   | where_exp: "f", "f.name contains '_cv_RyotaroOKABE.pdf'"
+   | sort: "path" %}
+{% assign cv_pdf = cv_pdfs | last %}
+{% if cv_pdf %}
+  {% assign cv_pdf_url = cv_pdf.path | relative_url %}
+  {% assign cv_pdf_date = cv_pdf.name | slice: 0, 10 | date: "%B %Y" %}
+{% endif %}
 
+{% if cv_pdf %}
 <p class="cv-download">
-  <a class="cv-download__button" href="{{ cv.pdf | relative_url }}">
+  <a class="cv-download__button" href="{{ cv_pdf_url }}">
     <i class="fas fa-file-pdf" aria-hidden="true"></i>
     {{ cv.pdf_label }}
   </a>
-  <span class="cv-download__date">Last updated: {{ cv.pdf_date }}</span>
+  <span class="cv-download__date">Last updated: {{ cv_pdf_date }}</span>
 </p>
+{% endif %}
 
 <section class="cv-section">
   <h2>Education</h2>
@@ -94,6 +110,8 @@ redirect_from:
   </p>
 </section>
 
+{% if cv_pdf %}
 <div class="cv-embed">
-  <embed src="{{ cv.pdf | relative_url }}" type="application/pdf" width="100%" height="800px" />
+  <embed src="{{ cv_pdf_url }}" type="application/pdf" width="100%" height="800px" />
 </div>
+{% endif %}

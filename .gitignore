@@ -18,3 +18,11 @@ package-lock.json
 
 # Local working materials (bio drafts etc.) - not for the public repo
 resources/
+
+# CV source folder (Word master + exported PDFs live here; only files/*.pdf is published)
+cv_source/archives_old/
+cv_source/cv_pdf_archive/
+cv_source/*_tmp_*
+~$*
+.DS_Store
+Gemfile.lock.*-bak
