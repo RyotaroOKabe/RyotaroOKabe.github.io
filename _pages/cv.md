@@ -11,7 +11,7 @@ redirect_from:
 {% assign cv = site.data.cv %}
 
 <p class="cv-download">
-  <a class="cv-download__button" href="{{ base_path }}{{ cv.pdf }}">
+  <a class="cv-download__button" href="{{ cv.pdf | relative_url }}">
     <i class="fas fa-file-pdf" aria-hidden="true"></i>
     {{ cv.pdf_label }}
   </a>
@@ -95,5 +95,5 @@ redirect_from:
 </section>
 
 <div class="cv-embed">
-  <embed src="{{ base_path }}{{ cv.pdf }}" type="application/pdf" width="100%" height="800px" />
+  <embed src="{{ cv.pdf | relative_url }}" type="application/pdf" width="100%" height="800px" />
 </div>
