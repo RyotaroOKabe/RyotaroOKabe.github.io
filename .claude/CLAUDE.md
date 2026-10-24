@@ -31,7 +31,8 @@ This repository contains the personal/academic website of Ryotaro Okabe, hosted 
 
 ## Content Source of Truth
 - **Profile details**: `_config.yml` (author configuration) and `_data/profile.yml` (homepage hero/bio).
-- **CV File**: `files/2026-10-24_cv_RyotaroOKABE.pdf` (path set in `_data/cv.yml`, rendered by `_pages/cv.md`).
+- **CV source**: `cv_source/cv_RyotaroOKABE.docx` (Word master; folder excluded from the site build, archives gitignored).
+- **CV File**: newest `files/YYYY-MM-DD_cv_RyotaroOKABE.pdf`; `_pages/cv.md` picks it automatically and derives the "Last updated" date from the filename.
 - **Publications database**: `markdown_generator/publications.csv` (source) -> generates `_publications/` pages via `markdown_generator/publications.py`.
 
 ## Safety Rules
@@ -40,8 +41,8 @@ This repository contains the personal/academic website of Ryotaro Okabe, hosted 
 - **Do not expose private metadata**: Maintain privacy of email addresses and phone numbers unless they are public academic contact details.
 
 ## Publication/CV Update Workflow
-1. If the CV PDF is updated, rename the file using `YYYY-MM-DD_cv_RyotaroOKABE.pdf` format and copy it to `files/`.
-2. Update `pdf`, `pdf_date`, and the mirrored content in `_data/cv.yml`.
+1. Edit `cv_source/cv_RyotaroOKABE.docx` in Word, then "Save as PDF" directly into `files/` as `YYYY-MM-DD_cv_RyotaroOKABE.pdf`. Nothing else needs to change for the link/date: the CV page selects the newest dated PDF. Older dated PDFs can stay (they are not linked) or be moved to `cv_source/cv_pdf_archive/`.
+2. If the CV content changed (positions, awards, skills), mirror it in `_data/cv.yml`.
 3. If new publications are added:
    - Add a row in `markdown_generator/publications.csv`.
    - Run `python markdown_generator/publications.py` to regenerate the individual publication markdown files under `_publications/`.

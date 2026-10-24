@@ -1,8 +1,8 @@
-# CV page content — mirrors files/2026-10-24_cv_RyotaroOKABE.pdf.
-# When the CV PDF is updated, update this file and the pdf path together.
-pdf: "/files/2026-10-24_cv_RyotaroOKABE.pdf"
+# CV page content — mirrors the newest files/YYYY-MM-DD_cv_RyotaroOKABE.pdf.
+# The PDF link and "Last updated" date are picked automatically in _pages/cv.md
+# from the newest dated PDF in files/; only update the sections below when the
+# CV content itself changes.
 pdf_label: "Download full CV (PDF)"
-pdf_date: "October 2026"
 
 education:
   - degree: "Ph.D. in Chemistry"
