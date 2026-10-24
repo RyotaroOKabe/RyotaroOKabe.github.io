@@ -14,9 +14,13 @@ This repository contains the personal/academic website of Ryotaro Okabe, hosted 
 - `markdown_generator/`: Python scripts and source CSV/BibTeX files for automating publication list additions.
 
 ## Build and Test Commands
-- Local Jekyll build: `bundle exec jekyll build`
-- Local Jekyll dev server: `bundle exec jekyll serve`
+- Ruby: use Homebrew `ruby@3.3` (GitHub Pages runs Ruby 3.3; `github-pages` 232 does not resolve on Ruby 4.x because `commonmarker` requires Ruby < 4.0).
+  `export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"`
+- Gems are installed outside Dropbox: `.bundle/config` (gitignored) sets `BUNDLE_PATH` to `~/.local/share/ruby-bundle/RyotaroOKabe.github.io`. First time on a new machine: `bundle config set --local path <dir outside Dropbox>` then `bundle install`.
+- Local Jekyll build (write output outside Dropbox): `bundle exec jekyll build -d /tmp/rokabe-site`
+- Local Jekyll dev server: `bundle exec jekyll serve -d /tmp/rokabe-site`
   *Note: Local building inside Dropbox may require pausing Dropbox sync to avoid `Permission Denied` folder lock errors.*
+- `Gemfile.lock` is gitignored; if Bundler complains about a lock from another machine, move it aside and re-run `bundle install`.
 
 ## Style & Design Principles
 - **Modern Minimalist**: Rely on generous white space, clean grids, and strong typography.
