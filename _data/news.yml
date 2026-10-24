@@ -1,6 +1,18 @@
 # Recent Highlights on the homepage — newest first.
 # date: use YYYY-MM only when the month is verified; otherwise the year only.
 # text: Markdown supported (e.g. *italics* for journal names).
+- date: "2026-10"
+  text: "Started as an Argonne Scholar (Maria Goeppert Mayer Fellow) in the X-ray Science Division at Argonne National Laboratory"
+
+- date: "2026-10"
+  text: "*A theoretical framework for efficient solvent suppression in solid-state NMR* published in *Journal of Magnetic Resonance*"
+
+- date: "2026-09"
+  text: "Received Ph.D. in Chemistry from MIT"
+
+- date: "2026-07"
+  text: "Preprint *Agentic AI for Scientific Reasoning in Autonomous Quantum Sensing Experiments* posted to arXiv"
+
 - date: "2026-05"
   text: "Preprint *Universal Magnetic Structure Prediction from Atomic Coordinates with Near-Experimental Accuracy* posted to arXiv"
 

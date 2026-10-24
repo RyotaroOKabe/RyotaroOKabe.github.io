@@ -14,9 +14,13 @@ This repository contains the personal/academic website of Ryotaro Okabe, hosted 
 - `markdown_generator/`: Python scripts and source CSV/BibTeX files for automating publication list additions.
 
 ## Build and Test Commands
-- Local Jekyll build: `bundle exec jekyll build`
-- Local Jekyll dev server: `bundle exec jekyll serve`
+- Ruby: use Homebrew `ruby@3.3` (GitHub Pages runs Ruby 3.3; `github-pages` 232 does not resolve on Ruby 4.x because `commonmarker` requires Ruby < 4.0).
+  `export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"`
+- Gems are installed outside Dropbox: `.bundle/config` (gitignored) sets `BUNDLE_PATH` to `~/.local/share/ruby-bundle/RyotaroOKabe.github.io`. First time on a new machine: `bundle config set --local path <dir outside Dropbox>` then `bundle install`.
+- Local Jekyll build (write output outside Dropbox): `bundle exec jekyll build -d /tmp/rokabe-site`
+- Local Jekyll dev server: `bundle exec jekyll serve -d /tmp/rokabe-site`
   *Note: Local building inside Dropbox may require pausing Dropbox sync to avoid `Permission Denied` folder lock errors.*
+- `Gemfile.lock` is gitignored; if Bundler complains about a lock from another machine, move it aside and re-run `bundle install`.
 
 ## Style & Design Principles
 - **Modern Minimalist**: Rely on generous white space, clean grids, and strong typography.
@@ -26,8 +30,8 @@ This repository contains the personal/academic website of Ryotaro Okabe, hosted 
 - **Static Compatibility**: Avoid using server-side frameworks or plugins not supported by GitHub Pages (stay compatible with `github-pages` gem).
 
 ## Content Source of Truth
-- **Profile details**: `_config.yml` (author configuration) and `_pages/about.md`.
-- **CV File**: `files/2026-06-18_cv_RyotaroOKABE.pdf` (referenced by `_pages/cv.md`).
+- **Profile details**: `_config.yml` (author configuration) and `_data/profile.yml` (homepage hero/bio).
+- **CV File**: `files/2026-10-24_cv_RyotaroOKABE.pdf` (path set in `_data/cv.yml`, rendered by `_pages/cv.md`).
 - **Publications database**: `markdown_generator/publications.csv` (source) -> generates `_publications/` pages via `markdown_generator/publications.py`.
 
 ## Safety Rules
@@ -37,7 +41,7 @@ This repository contains the personal/academic website of Ryotaro Okabe, hosted 
 
 ## Publication/CV Update Workflow
 1. If the CV PDF is updated, rename the file using `YYYY-MM-DD_cv_RyotaroOKABE.pdf` format and copy it to `files/`.
-2. Update the link inside `_pages/cv.md` to point to the new path.
+2. Update `pdf`, `pdf_date`, and the mirrored content in `_data/cv.yml`.
 3. If new publications are added:
    - Add a row in `markdown_generator/publications.csv`.
    - Run `python markdown_generator/publications.py` to regenerate the individual publication markdown files under `_publications/`.

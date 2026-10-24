@@ -9,7 +9,14 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-gem "github-pages", group: :jekyll_plugins
+gem "github-pages", "~> 232", group: :jekyll_plugins
+
+# Ruby 3.4+ removed these from the default gems; jekyll 3.9 (github-pages) still
+# requires them at load time. Harmless on older Rubies and on GitHub Pages.
+gem "csv"
+gem "base64"
+gem "bigdecimal"
+gem "logger"
 
 # If you want to use Jekyll native, uncomment the line below.
 # To upgrade, run `bundle update`.

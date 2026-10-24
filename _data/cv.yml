@@ -1,14 +1,14 @@
-# CV page content — mirrors files/2026-06-18_cv_RyotaroOKABE.pdf.
+# CV page content — mirrors files/2026-10-24_cv_RyotaroOKABE.pdf.
 # When the CV PDF is updated, update this file and the pdf path together.
-pdf: "/files/2026-06-18_cv_RyotaroOKABE.pdf"
+pdf: "/files/2026-10-24_cv_RyotaroOKABE.pdf"
 pdf_label: "Download full CV (PDF)"
-pdf_date: "June 2026"
+pdf_date: "October 2026"
 
 education:
   - degree: "Ph.D. in Chemistry"
     institution: "Massachusetts Institute of Technology"
     location: "MA, USA"
-    period: "Sept. 2021 – Sept. 2026 (expected)"
+    period: "Sept. 2021 – Sept. 2026"
   - degree: "M.S. in Engineering"
     institution: "Institute of Science Tokyo"
     location: "Japan"
@@ -22,11 +22,18 @@ education_notes:
   - "Leadership: APS Group on Data Science Student Representative (2026–2028); Japanese Assoc. of MIT, Treasurer (2022–2024); Sidney Pacific Graduate Residence, Officer (2022–2024); Japan–US Science Forum in Boston, Organizer (2022–2024)"
 
 experience:
+  - role: "Argonne Scholar (Maria Goeppert Mayer Fellow)"
+    org: "Argonne National Laboratory"
+    detail: "X-ray Science Division; Sponsors: Dr. Haidan Wen, Dr. Mathew Cherukara"
+    location: "IL, USA"
+    period: "Oct. 2026 – Present"
+    bullets:
+      - "Develop AI/agent-based methods for the analysis and design of X-ray measurements at the Advanced Photon Source."
   - role: "Research Assistant"
     org: "Massachusetts Institute of Technology"
     detail: "Advisor: Prof. Mingda Li"
     location: "MA, USA"
-    period: "Nov. 2021 – Present"
+    period: "Nov. 2021 – Sep. 2026"
     bullets:
       - "Developed machine learning methods to explore the structure–property relationship in materials (e.g., prediction of phonon dispersion from material structures, generating quantum material candidates)."
       - "Developed machine learning methods to localize radiation sources with detector arrays."
@@ -61,6 +68,8 @@ experience:
       - "Observed the aggregation kinetics of Amyloid beta (Aβ) protein and interactions with the metal complex."
 
 awards:
+  - text: "Maria Goeppert Mayer Fellowship, Argonne National Laboratory"
+    date: "Oct. 2026 – Oct. 2029"
   - text: "MRS 2025 Spring Graduate Student Silver Award"
     date: "Apr. 2025"
   - text: "MRS 2025 Spring Best Poster Award"
