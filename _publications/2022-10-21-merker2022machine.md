@@ -2,7 +2,7 @@
 title: "Machine Learning Magnetism Classifiers from Atomic Coordinates"
 collection: publications
 permalink: /publication/2022-10-21-merker2022machine
-excerpt: 'Development of machine learning classifiers for predicting magnetic properties directly from atomic coordinates.'
+excerpt: 'A Euclidean-equivariant graph neural network classifies magnetic order directly from atomic coordinates, using a descriptor that encodes crystal structures of any space group, as a data-driven complement to neutron diffraction and semi-empirical DFT.'
 date: 2022-10-21
 venue: 'iScience'
 category: manuscripts
@@ -11,4 +11,4 @@ citation: 'Merker, H.A., Heiberger, H., Nguyen, L., Liu, T., Chen, Z., Andrejevi
 ---
 <a href='https://www.cell.com/iscience/fulltext/S2589-0042(22)01464-X'>Paper</a> /
 
-Development of machine learning classifiers for predicting magnetic properties directly from atomic coordinates.
+A Euclidean-equivariant graph neural network classifies magnetic order directly from atomic coordinates, using a descriptor that encodes crystal structures of any space group, as a data-driven complement to neutron diffraction and semi-empirical DFT.

@@ -2,7 +2,7 @@
 title: "Universal Ensemble-Embedding Graph Neural Network for Direct Prediction of Optical Spectra from Crystal Structures"
 collection: publications
 permalink: /publication/2024-09-12-hung2024universal
-excerpt: 'Development of ensemble-embedding graph neural networks for direct prediction of optical spectra from crystal structures.'
+excerpt: 'GNNOpt, an equivariant graph neural network with universal ensemble embedding, predicts optical spectra such as refractive index and absorption directly from crystal structures, enabling high-throughput screening of materials for light–matter applications.'
 date: 2024-09-12
 venue: 'Advanced Materials'
 category: manuscripts
@@ -13,9 +13,4 @@ citation: 'Hung, N.T., <strong>Okabe, R.</strong>, Chotrattanapituk, A., &amp; L
 <a href='https://www.tohoku.ac.jp/en/press/ai_speeds_up_discovery_of_energy_and_quantum_materials.html'>Tohoku University Research News</a> /
 <a href='https://github.com/nguyen-group/GNNOpt'>GitHub</a> /
 
-<a href='https://doi.org/10.1002/adma.202409175' target='_blank' rel='noopener'>
-	<img src="{{'images_pub/hung2024universal.png' | relative_url}}"
-	style='max-width:95%; height:auto; display:block; margin:1rem auto;'>
-</a>
-
-Development of ensemble-embedding graph neural networks for direct prediction of optical spectra from crystal structures.
+GNNOpt, an equivariant graph neural network with universal ensemble embedding, predicts optical spectra such as refractive index and absorption directly from crystal structures, enabling high-throughput screening of materials for light–matter applications.

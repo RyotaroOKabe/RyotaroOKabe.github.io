@@ -2,7 +2,7 @@
 title: "Universal Magnetic Structure Prediction from Atomic Coordinates with Near-Experimental Accuracy"
 collection: publications
 permalink: /publication/2026-05-16-chotrattanapituk2026universal
-excerpt: 'Universal magnetic structure prediction from atomic coordinates using advanced machine learning models with near-experimental accuracy.'
+excerpt: 'Magnetic structure network (MSN), an E(3)-equivariant graph neural network trained on experimentally determined MAGNDATA structures, predicts collinear and non-collinear magnetic structures from atomic coordinates using a primitive modulated structure representation that unifies commensurate and incommensurate orders.'
 date: 2026-05-16
 venue: 'arXiv'
 category: manuscripts
@@ -11,4 +11,4 @@ citation: 'Chotrattanapituk, A.†, <strong>Okabe, R.</strong>†, Rha, E., Al-H
 ---
 <a href='https://arxiv.org/abs/2605.16230'>Paper</a> /
 
-Universal magnetic structure prediction from atomic coordinates using advanced machine learning models with near-experimental accuracy.
+Magnetic structure network (MSN), an E(3)-equivariant graph neural network trained on experimentally determined MAGNDATA structures, predicts collinear and non-collinear magnetic structures from atomic coordinates using a primitive modulated structure representation that unifies commensurate and incommensurate orders.

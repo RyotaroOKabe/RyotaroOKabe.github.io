@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2026-10-12-matsunaga2026theoretical
 redirect_from:
   - /publication/2024-08-28-matsunaga2025novel
-excerpt: 'Theoretical analysis of echo formation in solid-state NMR solvent suppression and a scheme that circumvents solvent-signal refocusing by adiabatic-inversion-based dephasing.'
+excerpt: 'A theoretical framework explaining why the SLAP solvent-suppression scheme outperforms MISSISSIPPI in solid-state NMR: MISSISSIPPI is limited by solvent-signal refocusing, whereas SLAP circumvents echo formation by design, confirmed by simulations and 1H-detected experiments on GB1 at 60 kHz MAS.'
 date: 2026-10-12
 venue: 'Journal of Magnetic Resonance'
 category: manuscripts
@@ -13,4 +13,4 @@ citation: 'Matsunaga, T.†, <strong>Okabe, R.</strong>†, Liu, Y., Shigemitsu,
 ---
 <a href='https://doi.org/10.1016/j.jmr.2026.108183'>Paper</a> /
 
-Theoretical analysis of echo formation in solid-state NMR solvent suppression and a scheme that circumvents solvent-signal refocusing by adiabatic-inversion-based dephasing.
+A theoretical framework explaining why the SLAP solvent-suppression scheme outperforms MISSISSIPPI in solid-state NMR: MISSISSIPPI is limited by solvent-signal refocusing, whereas SLAP circumvents echo formation by design, confirmed by simulations and 1H-detected experiments on GB1 at 60 kHz MAS.

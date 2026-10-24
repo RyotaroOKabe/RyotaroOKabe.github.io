@@ -2,7 +2,7 @@
 title: "Precise Fermi-level engineering in a topological Weyl semimetal via fast ion implantation"
 collection: publications
 permalink: /publication/2024-06-01-mandal2024precise
-excerpt: 'Precise control of Fermi level in topological Weyl semimetals through fast ion implantation techniques.'
+excerpt: 'Accelerator-based high-energy hydrogen implantation, guided by theory-driven planning, tunes the Fermi level of the bulk Weyl semimetal TaP with meV precision around the Weyl nodes while preserving crystallinity, the Weyl nodes, and carrier mobility.'
 date: 2024-06-01
 venue: 'Applied Physics Reviews'
 category: manuscripts
@@ -12,4 +12,4 @@ citation: 'Mandal, M.†, Chotrattanapituk, A.†, Woller, K., Xu, H., Mao, N., 
 <a href='https://doi.org/10.1063/5.0181361'>Paper</a> /
 <a href='https://news.mit.edu/2024/new-approach-fine-tuning-quantum-materials-0812'>MIT News</a> /
 
-Precise control of Fermi level in topological Weyl semimetals through fast ion implantation techniques.
+Accelerator-based high-energy hydrogen implantation, guided by theory-driven planning, tunes the Fermi level of the bulk Weyl semimetal TaP with meV precision around the Weyl nodes while preserving crystallinity, the Weyl nodes, and carrier mobility.

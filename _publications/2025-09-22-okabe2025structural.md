@@ -2,7 +2,7 @@
 title: "Structural Constraint Integration in a Generative Model for the Discovery of Quantum Materials"
 collection: publications
 permalink: /publication/2025-09-22-okabe2025structural
-excerpt: 'We present a novel approach to integrating structural constraints in generative models for quantum material discovery, enabling more accurate predictions of material properties through advanced machine learning techniques.'
+excerpt: 'SCIGEN enforces geometric constraints such as honeycomb and kagome lattices within diffusion-based generative models, generating ten million candidate compounds with Archimedean and Lieb lattices; over 10% pass multistage stability screening, and a GNN classifier detects magnetic ordering in 41% of DFT-relaxed structures.'
 date: 2025-09-22
 venue: 'Nature Materials'
 category: manuscripts
@@ -19,4 +19,4 @@ citation: '<strong>Okabe, R.</strong>, Cheng, M., Chotrattanapituk, A., Mandal, 
 	style='max-width:95%; height:auto; display:block; margin:1rem auto;'>
 </a>
 
-We present a novel approach to integrating structural constraints in generative models for quantum material discovery, enabling more accurate predictions of material properties through advanced machine learning techniques.
+SCIGEN enforces geometric constraints such as honeycomb and kagome lattices within diffusion-based generative models, generating ten million candidate compounds with Archimedean and Lieb lattices; over 10% pass multistage stability screening, and a GNN classifier detects magnetic ordering in 41% of DFT-relaxed structures.

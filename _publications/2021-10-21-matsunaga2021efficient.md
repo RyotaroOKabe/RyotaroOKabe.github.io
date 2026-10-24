@@ -2,7 +2,7 @@
 title: "Efficient solvent suppression with adiabatic inversion for 1H-detected solid-state NMR"
 collection: publications
 permalink: /publication/2021-10-21-matsunaga2021efficient
-excerpt: 'Development of efficient solvent suppression techniques using adiabatic inversion pulses for 1H-detected solid-state NMR experiments.'
+excerpt: 'SLAP, a solvent-suppression scheme based on adiabatic inversion pulses for 1H-detected solid-state NMR, achieves up to 3.5-fold better suppression than MISSISSIPPI on a uniformly 13C/15N-labeled GB1 sample at 60 kHz magic-angle spinning, at lower average RF power.'
 date: 2021-10-21
 venue: 'Journal of Biomolecular NMR'
 category: manuscripts
@@ -11,4 +11,4 @@ citation: 'Matsunaga, T., <strong>Okabe, R.</strong>, &amp; Ishii, Y. (2021). Ef
 ---
 <a href='https://doi.org/10.1007/s10858-021-00384-8'>Paper</a> /
 
-Development of efficient solvent suppression techniques using adiabatic inversion pulses for 1H-detected solid-state NMR experiments.
+SLAP, a solvent-suppression scheme based on adiabatic inversion pulses for 1H-detected solid-state NMR, achieves up to 3.5-fold better suppression than MISSISSIPPI on a uniformly 13C/15N-labeled GB1 sample at 60 kHz magic-angle spinning, at lower average RF power.

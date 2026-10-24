@@ -11,4 +11,9 @@ citation: 'Isogawa, T.†, <strong>Okabe, R.</strong>†, Phadetsuwannukun, N., 
 ---
 <a href='https://arxiv.org/abs/2607.25145'>Paper</a> /
 
+<a href='https://arxiv.org/abs/2607.25145' target='_blank' rel='noopener'>
+	<img src="{{'images_pub/isogawa2026agentic.png' | relative_url}}"
+	style='max-width:95%; height:auto; display:block; margin:1rem auto;'>
+</a>
+
 An LLM-based agentic workflow that autonomously plans, runs, and analyzes quantum sensing experiments on nitrogen-vacancy centers in diamond, together with offline benchmarks that evaluate the agent's scientific reasoning.
