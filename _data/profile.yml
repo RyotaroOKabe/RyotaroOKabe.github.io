@@ -2,7 +2,7 @@
 name: "Ryotaro Okabe"
 name_japanese: "岡部 遼太郎"
 affiliation: "Argonne Scholar (Maria Goeppert Mayer Fellow), X-ray Science Division, Argonne National Laboratory"
-tagline: "Physics-informed AI for quantum materials: from discovery to autonomous X-ray experiments"
+tagline: "Physics-informed AI for quantum materials: from discovery toward autonomous X-ray experiments"
 photo: "RyotaroOkabe.png"
 photo_alt: "Portrait of Ryotaro Okabe"
 
@@ -38,4 +38,4 @@ links:
   - label: "ORCID"
     url: "https://orcid.org/0000-0002-5095-5951"
   - label: "Email"
-    url: "mailto:rokabe@mit.edu"
+    url: "mailto:rokabe@anl.gov"
