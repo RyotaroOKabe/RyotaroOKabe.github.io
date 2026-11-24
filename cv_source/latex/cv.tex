@@ -1,0 +1,215 @@
+% CV of Ryotaro Okabe — LaTeX source (compile with Tectonic / XeLaTeX)
+%   tectonic cv.tex        -> cv.pdf
+%   ../build_cv.sh         -> builds and copies to ../../files/YYYY-MM-DD_cv_RyotaroOKABE.pdf
+% Layout mirrors the former Word version: A4, 0.5in margins, Times New Roman 10pt.
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,margin=0.5in,headheight=0pt,headsep=0pt]{geometry}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{colorlinks=true, urlcolor=blue!70!black, pdftitle={Ryotaro Okabe - CV}, pdfauthor={Ryotaro Okabe}}
+\usepackage{parskip}
+\usepackage{needspace}
+
+\pagestyle{empty}
+\setlength{\parskip}{1.5pt}
+\setlength{\parindent}{0pt}
+\linespread{1.02}
+
+% ---------- helpers ----------
+% Section heading: bold caps with a rule underneath
+\newcommand{\cvsection}[1]{%
+  \needspace{3\baselineskip}%
+  \vspace{4pt}%
+  {\normalsize\bfseries\MakeUppercase{#1}}\par
+  \vspace{-6pt}\noindent\rule{\linewidth}{0.6pt}\par
+  \vspace{-4pt}}
+% Entry line: \entry{bold title}{plain rest}{italic meta}
+\newcommand{\entry}[3]{\textbf{#1}#2\ifx\relax#3\relax\else{ \textit{#3}}\fi\par}
+% Bulleted list
+\newlist{cvitems}{itemize}{1}
+\setlist[cvitems]{label=\textbullet, leftmargin=1.6em, itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt}
+% Numbered list (publications/presentations)
+\newlist{cvenum}{enumerate}{1}
+\setlist[cvenum]{label=\arabic*., leftmargin=1.9em, itemsep=1pt, topsep=0pt, parsep=0pt}
+% Sub-bullet under a numbered item (press releases, extra talks)
+\newcommand{\note}[1]{\par{\hspace{1.2em}\textbullet\ #1}}
+\newcommand{\cofirst}{\textsuperscript{\dag}}
+\newcommand{\me}{\textbf{R Okabe}}
+\newcommand{\corr}{\textsuperscript{*}}
+
+\begin{document}
+
+% ---------- header ----------
+\begin{center}
+  {\large\bfseries Ryotaro Okabe}\\[1pt]
+  Email: rokabe [at] anl [dot] gov \textbar{}
+  \href{https://ryotarookabe.github.io/}{Website} \textbar{}
+  \href{https://github.com/RyotaroOKabe}{Github} \textbar{}
+  \href{https://scholar.google.com/citations?user=M0gMbZMAAAAJ&hl=en}{Google Scholar} \textbar{}
+  \href{https://www.linkedin.com/in/ryotaro-okabe-56463b1bb/}{LinkedIn} \textbar{}
+  \href{https://orcid.org/0000-0002-5095-5951}{ORCID}
+\end{center}
+\vspace{-6pt}
+
+% ---------- education ----------
+\cvsection{Education}
+\entry{Ph.D. in Chemistry,}{ Massachusetts Institute of Technology,}{MA, USA / Sept. 2021 -- Sept. 2026}
+\entry{M.S. in Engineering,}{ Institute of Science Tokyo,}{Japan / Sept. 2019 -- Sept. 2021}
+\entry{B.S. in Engineering,}{ Institute of Science Tokyo,}{Japan / Apr. 2016 -- Sept. 2019 (Early Graduation)}
+\begin{cvitems}
+  \item \textbf{Courses}: Quantum mechanics, Statistical mechanics, Solid state physics, Machine learning, Group theory
+  \item \textbf{Teaching}: Quantum Mechanics (2021), General Chemistry (2022)
+  \item \textbf{Leadership}: APS Group on Data Science Student Representative (2026--2028); Japanese Assoc. of MIT, Treasurer (2022--2024); Sidney Pacific Graduate Residence, Officer (2022--2024); Japan--US Science Forum in Boston, Organizer (2022--2024)
+\end{cvitems}
+
+% ---------- experiences ----------
+\cvsection{Experiences}
+\entry{Argonne Scholar (Maria Goeppert Mayer Fellow),}{ Argonne National Laboratory, X-ray Science Division (Sponsors: Dr. Haidan Wen, Dr. Mathew Cherukara),}{IL, USA \textbar{} Oct. 2026 -- Present}
+\begin{cvitems}
+  \item Develop AI/agent-based methods for the analysis and design of X-ray measurements at the Advanced Photon Source.
+\end{cvitems}
+\entry{Research Assistant,}{ Massachusetts Institute of Technology (Advisor: Prof. Mingda Li),}{MA, USA \textbar{} Nov. 2021 -- Sep. 2026}
+\begin{cvitems}
+  \item Developed machine learning methods to explore the structure--property relationship in materials (e.g., prediction of phonon dispersion from material structures, generating quantum material candidates).
+  \item Developed machine learning methods to localize the radiation sources with detector arrays.
+\end{cvitems}
+\entry{Research Intern,}{ IBM Thomas J. Watson Research Center (Mentor: Dr. Ching-Tzu Chen),}{NY, USA \textbar{} May -- Aug. 2024}
+\begin{cvitems}
+  \item High-throughput calculation of electrical conductance in topological interconnect materials.
+  \item Developed machine learning methods to predict the conductance of slab materials.
+\end{cvitems}
+\entry{Research Assistant,}{ Institute of Science Tokyo (Advisor: Prof. Yoshitaka Ishii),}{Japan \textbar{} Oct. 2018 -- Aug. 2021}
+\begin{cvitems}
+  \item Implemented new schemes of solid-state nuclear magnetic resonance (SSNMR) for selective signal acquisition and evaluated them through multidimensional SSNMR experiments with numerical simulations.
+\end{cvitems}
+\entry{Research Intern,}{ Yale University (Advisor: Prof. Charles A. Schmuttenmaer),}{CT, USA \textbar{} Jan. -- Apr. 2019}
+\begin{cvitems}
+  \item Synthesized metal-organic frameworks (MOFs) as photosensitizers and characterized them using powder X-ray diffraction, electrochemical experiments, and time-resolved terahertz spectroscopy.
+\end{cvitems}
+\entry{Research Intern,}{ Rice University (Advisor: Prof. Angel A. Martí),}{TX, USA \textbar{} Aug. -- Sept. 2018}
+\begin{cvitems}
+  \item Observed the aggregation kinetics of Amyloid beta (A$\beta$) protein and interactions with the metal complex.
+\end{cvitems}
+
+% ---------- honors ----------
+\cvsection{Honors/Awards}
+\begin{cvitems}
+  \item Maria Goeppert Mayer Fellowship, Argonne National Laboratory \textbar{} \textit{Oct. 2026 -- Oct. 2029}
+  \item MRS 2025 Spring Graduate Student Silver Award \textbar{} \textit{Apr. 2025}
+  \item MRS 2025 Spring Best Poster Award \textbar{} \textit{Apr. 2025}
+  \item IBM PhD Fellowship Award (Granted 40,000 USD) \textbar{} \textit{Sept. 2024 -- Aug. 2025}
+  \item NERSC GenAI AY2024 Resource Allocation (6,800 GPU node hours, 1,000 CPU node hours) \textbar{} \textit{Jul. 2024}
+  \item JASSO Graduate Fellowship (Granted approx. 11,000 USD) \textbar{} \textit{Sept. 2023 -- Aug. 2024}
+  \item Heiwa Nakajima Foundation Fellowship (Granted approx. 70,000 USD) \textbar{} \textit{Sept. 2021 -- Aug. 2023}
+  \item The Best Presentation Award at Master Thesis Midterm Presentation, Tokyo Institute of Technology \textbar{} \textit{Jul. 2020}
+  \item NMR Society of Japan Young Scientists Poster Award \textbar{} \textit{Nov. 2020}
+  \item Nakatani Foundation Graduate Fellowship (Granted approx. 35,000 USD) \textbar{} \textit{Sept. 2019 -- Aug. 2021}
+  \item Nakatani RIES Fellowship (fully funded research internship at Rice University and Yale University) \textbar{} \textit{Aug. 2018}
+\end{cvitems}
+
+% ---------- skills ----------
+\cvsection{Skills}
+\begin{cvitems}
+  \item \textbf{Programming}: Python, CUDA, MATLAB, Git, Scripting (Bash), LaTeX, HTML, Vim, Tcl
+  \item \textbf{Software}: Machine learning (PyTorch, TensorFlow, Scikit-learn, PyTorch Lightning, WandB, Transformers), Material simulations (ABINIT, Quantum Espresso, VASP, Wannier90, FEFF, Phonopy, Phono3py, OpenMC, Kwant), NMR simulations (SIMPSON, SpinEvolution), Linux, Origin, ChemDraw, Claude Code, Codex
+  \item \textbf{Material characterization}: Solid-state NMR, Powder X-ray diffraction, Metal-organic framework synthesis
+\end{cvitems}
+
+% ---------- publications ----------
+\cvsection{Publications}
+{\footnotesize \cofirst{} equal contribution (co-first authors); \corr{} corresponding author.}
+\begin{cvenum}
+  \item \me\cofirst\corr, S Kishida\cofirst\corr, A Chotrattanapituk, D Bollettieri, T Isogawa, Y Cheng, M Li\corr, and M Adachi\corr, ``Reward misalignment as an opportunity for materials discovery,'' \href{https://arxiv.org/abs/2611.26186}{arXiv:2611.26186, 2026}.
+  \item D Córdova Carrizales\cofirst, A Chotrattanapituk\cofirst, LD Davis, J Ramsey, \me, M Cheng, and M Li, ``Agentic inverse design of spatially programmed materials,'' \href{https://arxiv.org/abs/2611.03795}{arXiv:2611.03795, 2026}.
+  \item T Matsunaga\cofirst, \me\cofirst, Y Liu, Y Shigemitsu, and Y Ishii, ``A theoretical framework for efficient solvent suppression in solid-state NMR: Circumventing solvent-signal refocusing by adiabatic-inversion-based dephasing,'' \href{https://doi.org/10.1016/j.jmr.2026.108183}{J. Magn. Reson. 392, 108183, 2026}.
+  \item T Isogawa\cofirst, \me\cofirst, N Phadetsuwannukun, M Li, and P Cappellaro, ``Agentic AI for Scientific Reasoning in Autonomous Quantum Sensing Experiments,'' \href{https://arxiv.org/abs/2607.25145}{arXiv:2607.25145, 2026}.
+  \item A Chotrattanapituk\cofirst, \me\cofirst, E Rha, M Al-Hinai, E Jiang, D Pajerowski, Y Cheng, JJ Turner, and M Li, ``Universal Magnetic Structure Prediction from Atomic Coordinates with Near-Experimental Accuracy,'' \href{https://arxiv.org/abs/2605.16230}{arXiv:2605.16230, 2026}.
+  \item A Roy, K Shen, A MacBride, A Oladipupo, M Taskeen, W Treyde, et al. (353 authors, including \me), I Foster, and B Blaiszik, ``From Knowledge to Action: Outcomes of the 2025 Large Language Model (LLM) Hackathon for Applications in Materials Science and Chemistry,'' \href{https://arxiv.org/abs/2605.03205}{arXiv:2605.03205, 2026}.
+  \item MJ Landry\cofirst, \me\cofirst, C Fu, and M Li, ``Quantum Theory of Functionally Graded Materials,'' \href{https://arxiv.org/abs/2603.03424}{arXiv:2603.03424, 2026}.
+  \item M Cheng\cofirst, C Fu\cofirst, \me\cofirst, A Chotrattanapituk\cofirst, A Boonkird, NT Hung, and M Li, ``Artificial intelligence-driven approaches for materials design and discovery,'' \href{https://doi.org/10.1038/s41563-025-02403-7}{Nat. Mater. 25, 174--190, 2026}.
+  \item M Mandal\cofirst, E Rha\cofirst, A Chotrattanapituk\cofirst, D Cordova Carrizales\cofirst, A Lygo, KB Woller, M Cheng, \me, G Zhu, S Kishida, K Mak, CL Fu, S Michalopoulos, C Liu, L Wu, Y Zhu, S Stemmer, and M Li, ``Tuning Chiral Anomaly Signature in a Dirac Semimetal via Fast-Ion Implantation,'' \href{https://doi.org/10.1021/acs.nanolett.5c03841}{Nano Lett. 25, 17571--17577, 2025}.
+  \item A Boonkird\cofirst, M Cheng\cofirst, A Chotrattanapituk\cofirst, D Cordova Carrizales, \me, NC Drucker, M Mandal, T Nguyen, J Yeo, V Belosevich, E Spero, C Ortiz, Q Ma, L Fu, T Palacios, F Niroui, and M Li, ``Are Quantum Materials Economically and Environmentally Sustainable?'' \href{https://doi.org/10.1016/j.mattod.2025.09.014}{Materials Today, 2025}.
+    \note{Press release at \href{https://news.mit.edu/2025/why-some-quantum-materials-stall-while-others-scale-1015}{MIT News}.}
+  \item \me, M Cheng, A Chotrattanapituk, M Mandal, K Mak, D Cordova Carrizales, NT Hung, X Fu, B Han, Y Wang, W Xie, RJ Cava, TS Jaakkola, Y Cheng, and M Li, ``Structural Constraint Integration in a Generative Model for the Discovery of Quantum Materials,'' \href{https://doi.org/10.1038/s41563-025-02355-y}{Nat. Mater. 25, 223--230, 2025}.
+    \note{Press release at \href{https://news.mit.edu/2025/new-tool-makes-generative-ai-models-likely-create-breakthrough-materials-0922}{MIT News}.}
+  \item C Fu\cofirst, M Cheng\cofirst, NT Hung\cofirst, E Rha, Z Chen, \me, D Cordova Carrizales, M Mandal, YQ Cheng, and M Li, ``AI-driven defect engineering in advanced thermoelectric materials,'' \href{https://doi.org/10.1002/adma.202505642}{Adv. Mater. 37, 2505642, 2025}.
+  \item M Cheng, \me, and M Li, ``Closing the superconducting gap with AI,'' \href{https://doi.org/10.1016/j.newton.2025.100093}{Newton 1, 100093, 2025}.
+  \item B Han\cofirst, \me\cofirst, A Chotrattanapituk\cofirst, M Cheng\cofirst, M Li, and Y Cheng, ``AI-Powered Exploration of Molecular Vibrations, Phonons and Spectroscopy,'' \href{https://doi.org/10.1039/D4DD00353E}{Digit. Discov. 4, 584--624, 2025}.
+  \item \me\cofirst, Z West\cofirst, A Chotrattanapituk, M Cheng, D Cordova Carrizales, W Xie, RJ Cava, and M Li, ``Large Language Model-Guided Prediction Toward Quantum Materials Synthesis,'' \href{https://arxiv.org/abs/2410.20976}{arXiv:2410.20976, 2024}.
+  \item P Siriviboon\cofirst, C Fu\cofirst, M Landry\cofirst, \me, D Cordova Carrizales, Y Wang, and M Li, ``Quantum Theory of X-ray Photon Correlation Spectroscopy,'' \href{https://arxiv.org/abs/2412.03635}{arXiv:2412.03635, 2024}.
+  \item NT Hung, \me, A Chotrattanapituk, and M Li, ``Universal Ensemble-Embedding Graph Neural Network for Direct Prediction of Optical Spectra from Crystal Structures,'' \href{https://doi.org/10.1002/adma.202409175}{Adv. Mater. 36, 2409175, 2024}.
+    \note{Press release at \href{https://www.tohoku.ac.jp/en/press/ai_speeds_up_discovery_of_energy_and_quantum_materials.html}{Tohoku University Research News}; \href{https://onlinelibrary.wiley.com/doi/10.1002/adma.202470369}{Graphical Abstract}.}
+  \item \me\cofirst, A Chotrattanapituk\cofirst, A Boonkird, N Andrejevic, X Fu, TS Jaakkola, Q Song, T Nguyen, NC Drucker, S Mu, B Liao, Y Cheng, and M Li, ``Virtual Node Graph Neural Network for Full Phonon Prediction,'' \href{https://doi.org/10.1038/s43588-024-00661-0}{Nat. Comput. Sci. 4, 522--531, 2024}.
+    \note{Journal \href{https://www.nature.com/articles/s43588-024-00665-w}{Research Briefing}; July 2024 issue \href{https://www.nature.com/natcomputsci/volumes/4/issues/7}{Front Cover}; press release at \href{https://news.mit.edu/2024/ai-method-radically-speeds-predictions-materials-thermal-properties-0716}{MIT News}.}
+  \item M Mandal\cofirst, A Chotrattanapituk\cofirst, K Woller, H Xu, N Mao, \me, A Boonkird, T Nguyen, NC Drucker, T Momiki, J Li, J Kong, and M Li, ``Precise Fermi-level engineering in a topological Weyl semimetal via fast ion implantation,'' \href{https://doi.org/10.1063/5.0181361}{Appl. Phys. Rev. 11, 021429, 2024}.
+    \note{Press release at \href{https://news.mit.edu/2024/new-approach-fine-tuning-quantum-materials-0812}{MIT News}.}
+  \item M Cheng, \me, A Chotrattanapituk, and M Li, ``Machine Learning Detection of Majorana Zero Modes from Zero Bias Peak Measurements,'' \href{https://doi.org/10.1016/j.matt.2024.05.028}{Matter 7, 2507--2520, 2024}.
+  \item \me\cofirst, S Xue\cofirst, J Vavrek\cofirst, J Yu, R Pavlovsky, V Negut, B Quiter, J Cates, T Liu, B Forget, S Jegelka, G Kohse, L-W Hu, and M Li, ``Tetris-Inspired Detector with Neural Network for Radiation Mapping,'' \href{https://doi.org/10.1038/s41467-024-47338-w}{Nat. Commun. 15, 3061, 2024}.
+    \note{Press release at \href{https://news.mit.edu/2024/mit-researchers-develop-tetris-inspired-radiation-detector-0410}{MIT News}, \href{https://physicsworld.com/a/tetris-inspired-radiation-detector-uses-machine-learning/}{Physics World}, \href{https://www.neimagazine.com/analysis/tetris-ai-and-radiation-mapping/}{Nuclear Engineering International}.}
+  \item NC Drucker, T Nguyen, M Mandal, P Siriviboon, Y Quan, A Boonkird, \me, F Li, K Burrage, F Funuma, M Matsuda, D Abernathy, T Williams, S Chi, F Ye, C Nelson, B Liao, P Volkov, and M Li, ``Incipient Nematicity from Electron Flat Bands in a Kagome Metal,'' \href{https://arxiv.org/abs/2401.17141}{arXiv:2401.17141, 2024}.
+  \item \me, M Li, Y Iwasaki, N Regnault, C Felser, M Shirai, A Kovacs, T Schrefl, and A Hirohata, ``Materials Informatics for the Development and Discovery of Future Magnetic Materials,'' \href{https://doi.org/10.1109/LMAG.2023.3320888}{IEEE Magn. Lett. 14, 1--5, 2023}.
+    \note{IEEE Magnetics Letters (Volume 14) \href{https://ieeexplore.ieee.org/abstract/document/10477287}{Front Cover}.}
+  \item M Mandal, NC Drucker, P Siriviboon, T Nguyen, A Boonkird, TN Lamichhane, \me, A Chotrattanapituk, and M Li, ``Topological superconductors from a materials perspective,'' \href{https://doi.org/10.1021/acs.chemmater.3c00713}{Chem. Mater. 35, 6184--6200, 2023}.
+  \item NC Drucker, T Liu, Z Chen, \me, A Chotrattanapituk, T Nguyen, Y Wang, and M Li, ``Challenges and Opportunities of Machine Learning on Neutron and X-ray Scattering,'' \href{https://doi.org/10.1080/08940886.2022.2112498}{Synchrotron Radiat. News 35, 16--20, 2022}.
+  \item HA Merker, H Heiberger, L Nguyen, T Liu, Z Chen, N Andrejevic, NC Drucker, \me, Y Wang, T Smidt, and M Li, ``Machine Learning Magnetism Classifiers from Atomic Coordinates,'' \href{https://doi.org/10.1016/j.isci.2022.105192}{iScience 25, 105192, 2022}.
+  \item T Matsunaga, \me, and Y Ishii, ``Efficient solvent suppression with adiabatic inversion for \textsuperscript{1}H-detected solid-state NMR,'' \href{https://doi.org/10.1007/s10858-021-00384-8}{J. Biomol. NMR 75, 365--370, 2021}.
+  \item B Pattengale, JG Freeze, M Guberman-Pfeffer, \me, S Ostresh, S Chaudhuri, VS Batista, and CA Schmuttenmaer, ``A Conductive Metal-Organic Framework Photoanode,'' \href{https://doi.org/10.1039/D0SC04302H}{Chem. Sci. 11, 9593--9603, 2020}.
+    \note{\href{https://www.researchgate.net/profile/Michael-Rafailov/publication/362712589_Ultrafast_Dynamics_Ultrafast_Bandgap_Photonics_VII_Crete_Greece/links/643dd2d239aa471a5245b152/Ultrafast-Dynamics-Ultrafast-Bandgap-Photonics-VII-Crete-Greece.pdf}{Conference abstract proceedings (2022)}.}
+  \item B Pattengale, J Neu, S Ostresh, G Hu, JA Spies, \me, GW Brudvig, and CA Schmuttenmaer, ``Metal-Organic Framework Photoconductivity via Time-Resolved Terahertz Spectroscopy,'' \href{https://doi.org/10.1021/jacs.9b04338}{J. Am. Chem. Soc. 141, 9793--9797, 2019}.
+\end{cvenum}
+
+% ---------- presentations ----------
+\cvsection{Presentations}
+\begin{cvenum}
+  \item \textbf{Innovation Spotlight: Japan}, Boston, MA, USA \textbar{} \textit{May 2026}\\
+    Invited exhibition at the STEM showcase presented by the Consul General of Japan in Boston and the Museum of Science [\href{https://www.mos.org/events/innovation-spotlight-japan}{website}]
+  \item \textbf{UMass Boston Physics Colloquium}, Boston, MA, USA \textbar{} \textit{Mar. 2026}\\
+    Invited Talk: ``Accelerating Quantum Material Discovery with Machine Learning: From Property Prediction to Materials Design''
+  \item \textbf{APS Global Physics Summit 2026}, Denver, CO, USA \textbar{} \textit{Mar. 2026}\\
+    Tutorial 4: ``Generative AI for Physics: From Models to Materials'' [\href{https://summit.aps.org/events/MAR-4T}{Session website}] [\href{https://github.com/RyotaroOKabe/APS_demo_SCIGEN}{Colab demo}]\\
+    Oral: ``Structural Constraint Integration in a Generative Model for the Discovery of Quantum Materials''
+  \item \textbf{Laboratory of Atomic and Solid State Physics (LASSP) Quantum Theory Seminar}, Ithaca, NY, USA \textbar{} \textit{Oct. 2025}\\
+    Invited Talk: ``Advancing Quantum Material Discovery with Geometric Machine Learning''
+  \item \textbf{IMRC 2025 MRS/SMM Student Poster Award Exchange Program}, Cancún, Mexico \textbar{} \textit{Aug. 2025}\\
+    Invited Poster: ``Structural Constraint Integration in Generative Model for Discovery of Quantum Material Candidates''
+  \item \textbf{FT Workshop: AI-Accelerated Superconductor Discovery}, Gainesville, FL, USA \textbar{} \textit{Apr. 2025}\\
+    Poster: ``Structural Constraint Integration in Generative Model for Discovery of Quantum Material Candidates''
+  \item \textbf{2025 MRS Spring Meeting}, Seattle, WA, USA \textbar{} \textit{Apr. 2025}\\
+    Award Talk \& Poster: ``Advancing Quantum Material Discovery through Structural Constraint Integration in Generative Models''
+  \item \textbf{2024 MRS Fall Meeting}, Boston, MA, USA \textbar{} \textit{Dec. 2024}\\
+    Oral: ``Structural Constraint Integration in Generative Model for Discovery of Quantum Material Candidates''\\
+    Oral: ``Large Language Model-Guided Prediction Toward Quantum Materials Synthesis''
+  \item \textbf{Northeast Quantum Forum 2024}, Durham, NH, USA \textbar{} \textit{Oct. 2024}\\
+    Invited Talk: ``Machine-learning assisted study of quantum material properties and quantum material discovery''
+  \item \textbf{Quantum Materials for Emergent Applications in Quantum Science}, Telluride, CO, USA \textbar{} \textit{June 2024}\\
+    Invited Talk: ``Structural Constraint Integration in Generative Model for Discovery of Quantum Material Candidates''
+  \item \textbf{Competing Orders in Quantum Materials}, New Haven, CT, USA \textbar{} \textit{Mar. 2024}\\
+    Oral: ``Advancing Quantum Material Discovery through Structural Constraint Integration in Generative Models''
+  \item \textbf{2024 ACS Spring Meeting}, New Orleans, LA, USA \textbar{} \textit{Mar. 2024}\\
+    Poster: ``Virtual Node Augmented Machine Learning for Material Property Prediction''
+  \item \textbf{2023 MRS Spring Meeting}, San Francisco, CA, USA \textbar{} \textit{Apr. 2023}\\
+    Poster: ``Virtual Node Augmented Machine Learning for Material Property Prediction''
+  \item \textbf{2022 MRS Fall Meeting}, Boston, MA, USA \textbar{} \textit{Nov.--Dec. 2022}\\
+    Poster: ``Machine Learning Gamma Phonons from Atomic Coordinates''
+  \item \textbf{2022 MRS Spring Meeting} (online) \textbar{} \textit{May 2022}\\
+    Oral: ``Application of Radiation Detection Materials for Radiation Mapping with Machine Learning''
+  \item \textbf{22nd International Society of Magnetic Resonance Conference} (online) \textbar{} \textit{Aug. 2021}\\
+    Poster: ``Theoretical explanation of new solvent suppression scheme with adiabatic pulse and application for solid-state NMR experiments''
+  \item \textbf{The 59th Annual Meeting of the NMR Society of Japan}, Gunma, Japan \textbar{} \textit{Nov. 2020}\\
+    Poster: ``Development of Suppression Pulse with Adiabatic Pulse and Application for Biological Solid-State NMR''
+  \item \textbf{The 58th Annual Meeting of the NMR Society of Japan}, Kanagawa, Japan \textbar{} \textit{Nov. 2019}\\
+    Poster: ``Development of Suppression Pulse with Adiabatic Pulse for Solid-State NMR Experiment''
+\end{cvenum}
+
+% ---------- community service ----------
+\cvsection{Community Service}
+\begin{cvitems}
+  \item \textbf{Journal peer review}: Matter, npj Quantum Mater., Phys. Rev. Lett., Phys. Rev. Mater., Phys. Rev. A, EPJ Quantum Technol., 2026 Conference on Physics and AI (PAI26) @ Stanford
+  \item \textbf{Session chair}: APS Global Physics Summit 2026 (MAR-J42, MAR-W27), PAI26
+\end{cvitems}
+
+\end{document}

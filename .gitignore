@@ -26,3 +26,13 @@ cv_source/*_tmp_*
 ~$*
 .DS_Store
 Gemfile.lock.*-bak
+
+# LaTeX build artifacts of the CV (only cv_source/latex/cv.tex is tracked)
+cv_source/latex/*.pdf
+cv_source/latex/*.aux
+cv_source/latex/*.log
+cv_source/latex/*.out
+cv_source/latex/*.xdv
+cv_source/latex/*.fls
+cv_source/latex/*.fdb_latexmk
+cv_source/latex/*.synctex.gz
