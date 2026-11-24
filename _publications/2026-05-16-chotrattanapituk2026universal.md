@@ -11,4 +11,9 @@ citation: 'Chotrattanapituk, A.†, <strong>Okabe, R.</strong>†, Rha, E., Al-H
 ---
 <a href='https://arxiv.org/abs/2605.16230'>Paper</a> /
 
+<a href='https://arxiv.org/abs/2605.16230' target='_blank' rel='noopener'>
+	<img src="{{'images_pub/chotrattanapituk2026universal.png' | relative_url}}"
+	style='max-width:95%; height:auto; display:block; margin:1rem auto;'>
+</a>
+
 Magnetic structure network (MSN), an E(3)-equivariant graph neural network trained on experimentally determined MAGNDATA structures, predicts collinear and non-collinear magnetic structures from atomic coordinates using a primitive modulated structure representation that unifies commensurate and incommensurate orders.
