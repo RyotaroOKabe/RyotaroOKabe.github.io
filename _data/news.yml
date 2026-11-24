@@ -2,7 +2,7 @@
 # date: use YYYY-MM only when the month is verified; otherwise the year only.
 # text: Markdown supported (e.g. *italics* for journal names).
 - date: "2026-11"
-  text: "Preprint *Reward misalignment as an opportunity for materials discovery* (first author) posted to arXiv"
+  text: "Preprint *Reward misalignment as an opportunity for materials discovery* posted to arXiv"
 
 - date: "2026-11"
   text: "Named one of Argonne's 2026 Maria Goeppert Mayer Fellows ([Argonne News](https://www.anl.gov/article/argonne-honors-four-earlycareer-researchers-with-named-fellowships))"
